@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title>
+       {% if page.title %}
+         {{ page.title }} //
+       {% endif %}
+       Neil Bartlett
+     </title>
+     <meta name="author" content="Neil Bartlett" />
+     {% if page.summary %}
+       <meta name="description" content="{{ page.summary }}" />
+     {% endif %}
+     <link href="http://feeds2.feedburner.com/njbartlett" rel="alternate" title="Neil Bartlett" type="application/atom+xml" />
+
+     <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
+     <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" />
+
+     {% for css in page.css %}
+       <link rel="stylesheet" href="{{ css }}" type="text/css" />
+     {% endfor %}
+  </head>
+  <body>
+    <a href="http://github.com/njbartlett"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+
+    <div id="site">
+      <a id="subscribe" href="http://feeds2.feedburner.com/njbartlett"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
+
+      <div id="search_area" style="display: none">
+        <label for="search" style="display: none">Search</label>
+        <img src="http://www.famfamfam.com/lab/icons/silk/icons/cancel.png" alt="X"/>
+        <input id="search" />
+      </div>
+      
+      <h1><a href="/">Neil Bartlett</a></h1>
+      
+      <div class="clear"></div>
+      
+      <div id="sidebar" class="vcard">
+        <h3>Me</h3>
+        <dl id="contact">
+          <dt>Name</dt>
+          <dd><a class="fn url" href="/">Neil Bartlett</a></dd>
+
+          <dt>Email</dt>
+          <dd class="email"><a href="mailto:njbartlett@gmail.com">njbartlett@gmail.com</a></dd>
+
+          <dt>Telephone</dt>
+          <dd class="tel"></a></dd>
+          
+          <dt>Company</dt>
+          <dd class="org">...</dd>
+        </dl>
+        <h3>etc</h3>
+        <ul id="profiles">
+          <li><a href="http://twitter.com/njbartlett">Twitter</a></li>
+
+          <li><a href="http://github.com/njbartlett">GitHub</a></li>
+
+          <li><a href="http://uk.linkedin.com/in/neilbartlett">LinkedIn</a></li>
+        </ul>
+
+       {% comment %}
+         <div class="adr">
+          <span class="locality">Indianapolis</span>
+          <span class="region">IN</span>
+          <span class="postal-code">46220</span>
+          
+          <span class="country-name">USA</span>
+
+         </div>
+		{% endcomment %}
+      </div>
+      
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6/prototype.js"></script>
+      
+      <div id="content">
+        {{ content }}
+      </div>
+      
+      <div class="clear"></div>
+      
+    </div>
+
+    {% for js in page.javascript %}
+      <script type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}
+
+	{% comment %}
+    <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+    		var links = document.getElementsByTagName('a');
+    		var query = '?';
+    		for(var i = 0; i < links.length; i++) {
+    			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+    				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    			}
+    		}
+        document.write('<script type="text/javascript" src="http://disqus.com/forums/njbartlett/get_num_replies.js' + query + '"></' + 'script>');
+    	})();
+    //]]>
+    </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-254246-10");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+	{% endcomment %}
+
+  </body>
+</html>
