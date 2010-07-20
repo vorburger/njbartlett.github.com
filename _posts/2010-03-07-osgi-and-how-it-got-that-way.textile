@@ -1,7 +1,8 @@
 ---
 layout: post
 title: OSGi and How It Got That Way
-summary: A thought experiment... what if OSGi didn't already exist?
+summary: A thought experiment... if OSGi didn't exist, how would we design it?
+tags: [osgi, eclipse]
 ---
 
 bq. …some of you may have had occasion to run into mathematicians and to wonder therefore how they got that way. Here in partial explanation perhaps is the story of the great Russian mathematician Nikolai Ivanovich Lobachevsky. — Tom Lehrer.

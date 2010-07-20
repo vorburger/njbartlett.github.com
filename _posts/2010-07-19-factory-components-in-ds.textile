@@ -1,0 +1,72 @@
+---
+layout: post
+title: Multiple Component Instances with OSGi Declarative Services
+summary: What's better than one declarative component? <em>N</em> declarative components!
+tags: [osgi, eclipse]
+---
+
+When we define a component using OSGi Declarative Services (DS), by default we are defining a singleton. For example using the Bnd annotation syntax we can define a component as follows:
+
+{% highlight java %}
+@Component
+public class MyComponent implements MyInterface {
+	
+	public void doSomething() { /* ... */ }
+	
+}
+{% endhighlight %}
+
+This produces the following XML declaration to be used by the DS runtime:
+
+{% highlight xml %}
+<component name='org.example.MyComponent'>
+	<implementation class='org.example.MyComponent'/>
+	<service>
+		<provide interface='org.example.MyInterface'/>
+	</service>
+</component>
+{% endhighlight %}
+
+At runtime one instance of the @org.example.MyComponent@ class is created and registered as a service under the @org.example.MyInterface@ interface. So far so good. But what if we want more than one of them?
+
+Well, this is possible but it begs the obvious question: "how many do you want?". We need a way to communicate to the DS runtime how many instances to create. Typically this information is not available to use at build time, so we cannot simply declare it in the annotations or XML. We need a dynamic way to control the number of instances.
+
+If you have ever read the DS specification then you may be thinking that so-called "factory components" are the answer to this conundrum. Sorry but they are not... factory components are mostly a red herring... while they do have their uses, these are a lot more limited than they at first appear.
+
+The real answer is to take advantage of DS's built-in integration with the Configuration Admin service. Recall that if we use Config Admin to create a configuration record with a "Persistent Identity" (or "PID") matching the name of our component -- in this case @org.example.MyComponent@ -- then the component can receive the data in that configuration record simply by declaring an activation method like so:
+
+{% highlight java %}
+@Component
+public class MyComponent implements MyInterface {
+
+    @Activate
+    public void activate(Map<String, String> config) {
+        String url = config.get("url");
+        // ...
+    }
+
+    public void doSomething() { /* ... */ }
+
+}
+{% endhighlight %}
+
+A potential problem with this component is that it will _always_ be created, even if no configuration record is available. In many cases it's fine to create a component in the absence of configuration data -- the component should simply use defaults for the configuration values. However in other cases this won't work because no reasonable default values exist. To address this problem, Declarative Services version 1.1 (included in OSGi Release 4.2) added a new "configuration policy" attribute:
+
+{% highlight java %}
+@Component(configurationPolicy = require)
+public class MyComponent implements MyInterface {
+
+    @Activate
+    public void activate(Map<String, String> config) {
+        String url = config.get("url");
+        // ...
+
+{% endhighlight %}
+
+Now the component will only be created if a configuration record with the PID @org.example.MyComponent@ exists.
+
+We have successfully tweaked the cardinality of the component from "always exactly one" to "zero or one"... and in fact this component now already supports "zero to many". Instead of creating a single configuration record with a PID of @org.example.MyComponent@, we can create multiple records with a "factory PID" of @org.example.MyComponent@.
+
+If we do this, and if the component has a configuration policy of "required" as shown above, then we will get multiple instances of the component, with each instance potentially receiving different configuration data. Perfect! DS will continue to maintain all the service references in our component of course.
+
+If you have not used Configuration Admin before and are unsure how to create configuration records, then take a look at <a href="http://felix.apache.org/site/apache-felix-file-install.html">Apache Felix FileInstall</a>, which polls a directory for configuration files with the .cfg extension. It works on Equinox and Knopflerfish in addition to Felix.

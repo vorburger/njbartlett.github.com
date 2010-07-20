@@ -101,7 +101,10 @@ h3 {
 
 #post {
   margin-bottom: 30px;
-  text-align: justify;
+}
+
+#post p {
+	text-align: justify;
 }
 
 #post ul {
@@ -118,6 +121,10 @@ h3 {
 
 .posts p {
   margin: 5px 0 25px 0;
+}
+
+.postmeta {
+	font-style: italic;
 }
 
 .rss_only {

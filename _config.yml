@@ -1,1 +1,2 @@
 pygments: true
+exclude: blog.tmproj
