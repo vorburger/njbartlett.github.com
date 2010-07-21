@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+h2. <img src='/images/bndtools_text+logo_325x75.png' alt='Bndtools' title='bndtools'/>
+
+Bndtools is an Eclipse-based development environment for OSGi bundles and applications that focuses on ease of use, rapid development and producing accurate bundle metadata.
+
+Bndtools is an extension of <a href="http://www.aQute.biz/Code/Bnd">Bnd</a>, the powerful bundle tool created by Peter Kriens.
+
+h2. Documentation
+
+Full documentation for Bndtools, including installation instructions and tutorials, can be found in the <a href="/bndtools.html">Bndtools TiddlyWiki</a>.

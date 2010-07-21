@@ -75,7 +75,6 @@ h1 a, h1 a:link, h1 a:visited {
   padding: 0 20px 20px 20px;
 }
 #content ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -103,13 +102,22 @@ h3 {
   margin-bottom: 30px;
 }
 
-#post p {
+p {
 	text-align: justify;
 }
 
-#post ul {
+ul {
   list-style-type: square;
 }
+
+#tweets ul {
+	list-style-type: none;
+}
+
+#content ul.posts {
+	list-style-type: none;
+}
+
 
 #disqus_thread {
   margin-bottom: 130px;

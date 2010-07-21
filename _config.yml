@@ -1,2 +1,2 @@
 pygments: true
-exclude: blog.tmproj
+exclude: [blog.tmproj, TiddlySaver.jar]
