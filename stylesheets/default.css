@@ -70,6 +70,11 @@ h1 a, h1 a:link, h1 a:visited {
   display: none;
 }
 
+#breadcrumbs {
+  width: 600px;
+  padding: 0 20px;
+}
+
 #content {
   width: 600px;
   padding: 0 20px 20px 20px;
@@ -106,6 +111,7 @@ p {
 	text-align: justify;
 }
 
+
 ul {
   list-style-type: square;
 }
@@ -134,6 +140,11 @@ ul {
 .postmeta {
 	font-style: italic;
 }
+
+.quote {
+	font-style: italic;
+}
+
 
 .rss_only {
   display: none;
@@ -188,4 +199,37 @@ ul {
 }
 .searching #home {
   display: none;
+}
+
+@media print {
+	#sidebar {
+		display: none ! important;
+	}
+	
+	#ribbon {
+		display: none ! important;
+	}
+	
+	#search_area {
+		display: none ! important;
+	}
+
+	#subscribe {
+		display: none ! important;
+	}
+	
+	#content {
+		width: 600px;
+		padding: 0 60px;
+	}
+	
+	h1 {
+		width: 600px;
+		padding: 20px 60px;
+	}
+	
+	#breadcrumbs {
+		width: 600px;
+		padding: 0 60px;
+	}
 }

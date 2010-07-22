@@ -9,7 +9,7 @@ tags: [osgi, eclipse]
 
 Eclipse Marketplace client is available in all of the Eclipse 3.6 distribution packages except for the so-called "Eclipse Classic" distribution... if you are running Eclipse Classic then I strongly recommend installing the Marketplace client -- this can be done in the usual way from the Helios update site.
 
-To install Bndtools, open the Help menu in Eclipse and select Eclipse Marketplace. If this is the first time you have used it you may have to select Eclipse Marketplace as your solution catalog rather than Yoxos Marketplace. Then in the search field type "bndtools" (just "bnd" will work also) and click Go:
+To install Bndtools, open the Help menu in Eclipse and select _Eclipse Marketplace_. If this is the first time you have used it you may have to select your solution catalog as _Eclipse Marketplace_ (rather than _Yoxos Marketplace_ or any of the other catalogs that may appear in the future) and click Next. Then in the search field type "bndtools" (just "bnd" will work also) and click Go:
 
 <img src="/images/posts/eclipse-marketplace-bndtools.png" alt="Eclipse Marketplace Client"></img>
 

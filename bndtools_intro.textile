@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Bndtools
 ---
 
 h2. <img src='/images/bndtools_text+logo_325x75.png' alt='Bndtools' title='bndtools'/>

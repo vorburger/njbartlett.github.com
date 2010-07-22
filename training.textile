@@ -1,0 +1,15 @@
+---
+layout: default
+title: Training
+---
+
+h2. Training
+
+I currently offer the following training courses:
+
+* "Fundamentals of OSGi":training/osgi-fundamentals.html (2 days)
+* "Advanced OSGi":training/osgi-advanced.html (2 days)
+* Enterprise OSGi (1 day)
+* Eclipse RCP (4 days)
+
+These courses can be delivered on your premises -- please "contact me":mailto:njbartlett@gmail.com for schedule and pricing enquiries. They also run occasionally as public courses, in collaboration with "Skills Matter Ltd":http://skillsmatter.com/expert/java-jee/neil-bartlett.

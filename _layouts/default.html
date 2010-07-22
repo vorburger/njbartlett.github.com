@@ -23,7 +23,7 @@
      {% endfor %}
   </head>
   <body>
-    <a href="http://github.com/njbartlett"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+    <div id="ribbon"><a href="http://github.com/njbartlett"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/images/forkme_left_gray.png" alt="Fork me on GitHub" /></a></div>
 
     <div id="site">
       <a id="subscribe" href="http://feeds.feedburner.com/njbartlett"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
@@ -33,16 +33,34 @@
         <img src="http://www.famfamfam.com/lab/icons/silk/icons/cancel.png" alt="X"/>
         <input id="search" />
       </div>
-      
-      <h1><a href="/">Neil Bartlett</a></h1>
+
+	
+	<div id="breadcrumbs">
+	<a href="/index.html">Home</a>
+	{% if page.title != 'Home' %}
+		{% if page.breadcrumbs %}
+			{% for breadcrumb in page.breadcrumbs %}
+			» <a href="{{ breadcrumb.url }}">{{ breadcrumb.title }}</a>
+			{% endfor %}
+		{% endif %}
+		» <a href="{{ page.url }}">{{ page.title }}</a>
+	{% endif %}
+	</div>
+
+      <h1>Neil's point-free blog</h1>
       
       <div class="clear"></div>
       
       <div id="sidebar" class="vcard">
+		<ul>
+			<li><a href="http://www.osgi.org/"><img src="/images/OSGiSupporter2010_150x92.png"></a></li>
+			<li><a href="http://www.eclipse.org/"><img src="/images/friend_of_eclipse_150x80.jpeg"></a></li>
+		</ul>
 		<h3>Navigation</h3>
 		<ul id="pages">
 			<li><a href="/index.html">Main</a></li>
 			<li><a href="/about.html">About Me</a></li>
+			<li><a href="/training.html">Training</a></li>
 			<li><a href="/bndtools_intro.html">Bndtools</a></li>
 		</ul>
         <h3>Contact</h3>
@@ -65,6 +83,7 @@
 
           <li><a href="http://uk.linkedin.com/in/neilbartlett">LinkedIn</a></li>
         </ul>
+
       </div>
       
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6/prototype.js"></script>
