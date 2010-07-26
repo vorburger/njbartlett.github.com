@@ -2,10 +2,7 @@
 layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"
-        xml:lang="en"
-        xml:base="http://njbartlett.github.com/">
- 
+<feed xmlns="http://www.w3.org/2005/Atom"> 
  <title>Neil Bartlett</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
@@ -22,7 +19,7 @@ layout: nil
      <link href="/{{ post.url }}"/>
      <updated>{{ post.date | date_to_xmlschema }}</updated>
      <id>http://njbartlett.github.com{{ post.id }}</id>
-     <content type="html">{{ post.content | xml_escape }}</content>
+     <content type="html" xml:base="http://njbartlett.github.com/">{{ post.content | xml_escape }}</content>
    </entry>
  {% endfor %}
  
