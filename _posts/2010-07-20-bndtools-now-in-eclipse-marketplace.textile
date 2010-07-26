@@ -3,6 +3,7 @@ layout: post
 title: Bndtools Now Available in Eclipse Marketplace
 summary: The easy way to get going with OSGi development in Eclipse
 tags: [osgi, eclipse]
+flattr: http://njbartlett.github.com/bndtools.html
 ---
 
 <a href="/bndtools.html">Bndtools</a> — the OSGi development environment for Eclipse based on <a href="http://www.aQute.biz/Code/Bnd">Bnd</a> — can now be installed from the Eclipse Marketplace. This is substantially easier than the traditional install procedure for Eclipse plug-ins, which involved copying and pasting an update site URL ino the Update Manager.

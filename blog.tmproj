@@ -2,33 +2,73 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
-			<string>index.html</string>
+			<string>projects.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-19T23:24:01Z</date>
+			<date>2010-07-23T16:15:37Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>about.html</string>
+			<string>index.html</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T16:15:33Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>training/osgi-advanced.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T16:15:31Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>training/osgi-fundamentals.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T16:15:25Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>training.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T16:15:28Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>about.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T16:15:38Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>bndtools_intro.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T16:15:27Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-07-23-haskell.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-23T17:41:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-19T23:24:03Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2010-07-24T13:53:02Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-21T23:14:07Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-03-07-osgi-and-how-it-got-that-way.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-19T23:24:03Z</date>
+			<date>2010-07-20T23:58:42Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -40,92 +80,36 @@
 			<key>filename</key>
 			<string>_layouts/default.html</string>
 			<key>lastUsed</key>
-			<date>2010-07-19T23:23:19Z</date>
+			<date>2010-07-24T13:53:03Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_layouts/post.html</string>
 			<key>lastUsed</key>
-			<date>2010-07-19T21:45:26Z</date>
+			<date>2010-07-22T00:20:51Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>stylesheets/default.css</string>
 			<key>lastUsed</key>
-			<date>2010-07-19T21:45:28Z</date>
+			<date>2010-07-23T16:15:41Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>javascripts/twitter-1.11.2.js</string>
+			<key>lastUsed</key>
+			<date>2010-07-20T23:58:42Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>319</integer>
 	<key>metaData</key>
-	<dict>
-		<key>_layouts/default.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>45</integer>
-				<key>line</key>
-				<integer>44</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>75</integer>
-			<key>firstVisibleLine</key>
-			<integer>25</integer>
-		</dict>
-		<key>_posts/2010-03-07-osgi-and-how-it-got-that-way.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>77</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_posts/2010-07-19-factory-components-in-ds.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>65</integer>
-				<key>line</key>
-				<integer>3</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>index.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>27</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>2</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
-		<string>_layouts/default.html</string>
-		<string>index.html</string>
-		<string>_posts/2010-03-07-osgi-and-how-it-got-that-way.textile</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{279, 123}, {690, 755}}</string>
+	<string>{{471, 115}, {853, 763}}</string>
 </dict>
 </plist>

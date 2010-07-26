@@ -5,7 +5,16 @@ layout: default
 <div id="post">
   <h2>{{ page.title }}</h2>
   {{ content }}
-  <p><span class="postmeta">Posted on {{ page.date | date: "%d %B %Y" }}</span></p>
+  <p>
+	{% if page.flattr %}
+		<script type="text/javascript">
+			var flattr_url = '{{ page.flattr }}';
+			var flattr_btn='compact';
+		</script>
+		<script src="http://api.flattr.com/button/load.js" type="text/javascript"></script>
+	{% endif %}
+	<span class="postmeta">Posted on {{ page.date | date: "%d %B %Y" }}</span>
+  </p>
 </div>
 
 <div id="related">
