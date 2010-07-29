@@ -15,4 +15,4 @@ To address those who accuse Eclipse of inappropriately using an internal variabl
 
 So I don't think Eclipse has done anything particularly wrong here. Neither has Oracle, there was no reasonable way for them to know that a simple rebranding would cause such a problem, and they responded very quickly to fix it.
 
-Of course the fix is only a temporary one, as Oracle are going to want to change that variable eventually. So rather than pointing fingers, perhaps the Java community could try to come up with a real long-term solution. Such as a way to to manage and the JVM's memory from within the JVM... or getting rid of the cursed PermGen altogether?
+Of course the fix is only a temporary one, as Oracle are going to want to change that variable eventually. So rather than pointing fingers, perhaps the Java community could try to come up with a real long-term solution. Such as a way to manage the JVM's memory from within the JVM... or getting rid of the cursed PermGen altogether?
