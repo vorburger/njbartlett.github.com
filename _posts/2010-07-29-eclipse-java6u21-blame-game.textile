@@ -5,7 +5,7 @@ summary: What would you have done differently?
 tags: [eclipse, oracle]
 ---
 
-Ed Burnette published an <a href="http://www.zdnet.com/blog/burnette/oracle-rebrands-java-breaks-eclipse/2012">informative article on ZDNet</a> about the recent incompatibility problem with Eclipse and Java 6 update 21. Unfortunately the comments contain a lot of nasty scapegoating, with people variously blaming Oracle or Eclipse or both for the mess... and even Ed's article title seems a trifle unfair on Oracle.
+Ed Burnette published an <a href="http://www.zdnet.com/blog/burnette/oracle-rebrands-java-breaks-eclipse/2012">informative article on ZDNet</a> about the recent incompatibility problem with Eclipse and Java 6 update 21. Unfortunately the comments contain a lot of nasty accusations and finger-pointing, with people variously blaming Oracle or Eclipse or both for the mess... and even Ed's article title seems a trifle unfair on Oracle.
 
 To address those who accuse Eclipse of inappropriately using an internal variable, consider for a moment why this was done. Here are the facts:
 
