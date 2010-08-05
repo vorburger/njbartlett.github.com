@@ -2,19 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>projects.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-23T16:15:37Z</date>
+			<date>2010-07-26T13:18:41Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2010-07-23T16:15:33Z</date>
+			<date>2010-07-26T13:33:39Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -44,25 +46,33 @@
 			<key>filename</key>
 			<string>bndtools_intro.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-23T16:15:27Z</date>
+			<date>2010-07-26T13:13:29Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
+			<key>lastUsed</key>
+			<date>2010-07-29T01:22:58Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-23-haskell.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-23T17:41:17Z</date>
+			<date>2010-07-29T01:22:58Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-24T13:53:02Z</date>
+			<date>2010-07-29T01:04:56Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-21T23:14:07Z</date>
+			<date>2010-07-27T09:34:01Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -80,15 +90,13 @@
 			<key>filename</key>
 			<string>_layouts/default.html</string>
 			<key>lastUsed</key>
-			<date>2010-07-24T13:53:03Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2010-07-26T13:18:39Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_layouts/post.html</string>
 			<key>lastUsed</key>
-			<date>2010-07-22T00:20:51Z</date>
+			<date>2010-07-26T13:33:41Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -106,10 +114,165 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>319</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>_layouts/default.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>57</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>26</integer>
+		</dict>
+		<key>_layouts/post.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>16</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>6</integer>
+		</dict>
+		<key>_posts/2010-07-19-factory-components-in-ds.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>164</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>10</integer>
+				<key>line</key>
+				<integer>14</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_posts/2010-07-23-haskell.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+		</dict>
+		<key>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>394</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>bndtools_intro.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>227</integer>
+				<key>line</key>
+				<integer>29</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>77</integer>
+			<key>firstVisibleLine</key>
+			<integer>9</integer>
+		</dict>
+		<key>index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>projects.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>bndtools_intro.textile</string>
+		<string>_posts/2010-07-23-haskell.textile</string>
+		<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
+		<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
+		<string>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</string>
+		<string>_layouts/default.html</string>
+		<string>projects.textile</string>
+		<string>_layouts/post.html</string>
+		<string>index.html</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{471, 115}, {853, 763}}</string>
+	<string>{{342, 64}, {582, 789}}</string>
 </dict>
 </plist>
