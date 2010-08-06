@@ -5,7 +5,7 @@ summary: Illustrating a use-case where ServiceTracker is a better fit than DS.
 tags: osgi, eclipse
 ---
 
-I normally recommend using the Declarative Service (DS) specification for working with OSGi services, and in general I agree with the recommendation voiced by others such as <a href="http://martinlippert.blogspot.com/2010/03/slides-on-osgi-best-and-worst-practices.html">Martin</a> and <a href="http://www.slideshare.net/caniszczyk/osgi-best-and-worst-practices">Chris</a> that one should avoid programming against the OSGi APIs.
+I normally recommend using the Declarative Services (DS) specification for working with OSGi services, and in general I agree with the recommendation voiced by others such as <a href="http://martinlippert.blogspot.com/2010/03/slides-on-osgi-best-and-worst-practices.html">Martin</a> and <a href="http://www.slideshare.net/caniszczyk/osgi-best-and-worst-practices">Chris</a> that one should avoid programming against the OSGi APIs.
 
 However I'd like to highlight a use case in which the good old OSGi @ServiceTracker@ API can produce code that is more readable and robust than anything we could achieve with DS.
 
@@ -56,7 +56,6 @@ public class ForeachA extends ServiceTracker {
     @Override
     public Object addingService(ServiceReference ref) {
         IA a = (IA) context.getService(ref);
-        if(a == null) return null;
         return context.registerService(IC.class.getName(),
                                        new C(a), null);
     }
@@ -89,8 +88,6 @@ public class ForeachB extends ServiceTracker {
     @Override
     public Object addingService(ServiceReference ref) {
         IB b = (IB) context.getService(ref);
-        if(b == null) return null;
-        
         ForeachA foreachA = new ForeachA(context, b);
         foreachA.open();
         return foreachA;
@@ -108,3 +105,5 @@ public class ForeachB extends ServiceTracker {
 Note that while using ServiceTracker necessarily means having a dependency on the OSGi APIs, it's possible to completely isolate our usage of those APIs from our business logic. The class C is a POJO and receives instances of IA and IB through its constructor, so it remains useable and testable outside of an OSGi environment.
 
 In summary, there are still use cases where the low-level OSGi APIs such as ServiceTracker have an advantage over abstractions such as Declarative Services. I would like to see future versions of the DS specification support this specific use case, but I anticipate that will be difficult because of other things in the spec like Component Factories and factory configurations.
+
+*UPDATED*: Heiko Seeberger pointed out that the null-checks in my @addingService@  methods were not needed. This makes the code even more concise... thanks Heiko!
