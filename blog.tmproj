@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
+	<string>_posts/2010-08-10-generic-osgi.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -46,33 +46,39 @@
 			<key>filename</key>
 			<string>bndtools_intro.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-26T13:13:29Z</date>
+			<date>2010-08-05T20:41:33Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
+			<string>_posts/2010-08-10-generic-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-29T01:22:58Z</date>
+			<date>2010-08-10T01:01:19Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>_posts/2010-07-23-haskell.textile</string>
+			<string>_posts/2010-08-05-when-servicetrackers-trump-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-29T01:22:58Z</date>
+			<date>2010-08-10T00:36:08Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
+			<key>lastUsed</key>
+			<date>2010-08-05T20:34:50Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-29T01:04:56Z</date>
+			<date>2010-08-05T20:44:32Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-27T09:34:01Z</date>
+			<date>2010-08-05T20:44:35Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -102,7 +108,7 @@
 			<key>filename</key>
 			<string>stylesheets/default.css</string>
 			<key>lastUsed</key>
-			<date>2010-07-23T16:15:41Z</date>
+			<date>2010-08-10T01:01:19Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -143,91 +149,33 @@
 			<key>firstVisibleLine</key>
 			<integer>6</integer>
 		</dict>
-		<key>_posts/2010-07-19-factory-components-in-ds.textile</key>
+		<key>_posts/2010-08-05-when-servicetrackers-trump-ds.textile</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>164</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>58</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>47</integer>
 		</dict>
-		<key>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>10</integer>
-				<key>line</key>
-				<integer>14</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_posts/2010-07-23-haskell.textile</key>
+		<key>_posts/2010-08-10-generic-osgi.textile</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>8</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>8</integer>
-			</dict>
-		</dict>
-		<key>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>394</integer>
-				<key>line</key>
-				<integer>7</integer>
+				<integer>34</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>bndtools_intro.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>227</integer>
-				<key>line</key>
-				<integer>29</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>77</integer>
-			<key>firstVisibleLine</key>
-			<integer>9</integer>
+			<integer>15</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
@@ -260,19 +208,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>bndtools_intro.textile</string>
-		<string>_posts/2010-07-23-haskell.textile</string>
-		<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
-		<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
-		<string>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</string>
-		<string>_layouts/default.html</string>
-		<string>projects.textile</string>
-		<string>_layouts/post.html</string>
-		<string>index.html</string>
+		<string>_posts/2010-08-05-when-servicetrackers-trump-ds.textile</string>
+		<string>_posts/2010-08-10-generic-osgi.textile</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{342, 64}, {582, 789}}</string>
+	<string>{{382, 79}, {730, 799}}</string>
 </dict>
 </plist>
