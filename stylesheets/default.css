@@ -116,6 +116,12 @@ ul {
   list-style-type: square;
 }
 
+p code, ul code, ol code {
+   font-size: 120%;
+   background-color: #eee;
+}
+
+
 #tweets ul {
 	list-style-type: none;
 }
