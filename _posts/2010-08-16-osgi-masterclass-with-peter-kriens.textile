@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Training
+layout: post
+title: OSGi Masterclass with Peter Kriens and Neil Bartlett
+summary: Take your OSGi knowledge to the next level
+tags: osgi, eclipse
 ---
-
-h2. OSGi Masterclass with Peter Kriens
 
 "Peter Kriens":http://www.osgi.org/blog and I will be running an "OSGi Masterclass":http://www.aqute.biz/MasterClass/MasterClass in Girona, Spain from the 13th to 15th October 2010.
 
@@ -24,15 +24,3 @@ Girona airport (GRO) is a "RyanAir":http://www.ryanair.com/ hub and is therefore
 
 * "Full Details":http://www.aqute.biz/MasterClass/MasterClass
 * "Direct to registration":http://www.regonline.com/register/checkin.aspx?EventId=881199
-
-
-h2. Other Training
-
-I currently offer the following training courses:
-
-* "Fundamentals of OSGi":training/osgi-fundamentals.html (2 days)
-* "Advanced OSGi":training/osgi-advanced.html (2 days)
-* Enterprise OSGi (1 day)
-* Eclipse RCP (4 days)
-
-These courses can be delivered on your premises -- please "contact me":mailto:njbartlett@gmail.com for schedule and pricing enquiries. They also run occasionally as public courses, in collaboration with "Skills Matter Ltd":http://skillsmatter.com/expert/java-jee/neil-bartlett.
