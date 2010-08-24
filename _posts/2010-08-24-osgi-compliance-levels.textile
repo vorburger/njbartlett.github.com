@@ -32,3 +32,5 @@ A key concern for many frameworks as they seek to rise this pyramid is to remain
 What do you think of this taxonomy? Is it useful, or a waste of time? Should there more levels, or fewer? Please comment below, or link to your own blog.
 
 **UPDATE** <a href="http://tux2323.blogspot.com/2010/08/osgi-bundle-quality-or-bundle.html">Christian Baranowski blogged</a> some thoughts about independent verification of bundle compliance. That's a great idea, but my initial goal is less ambitious, i.e. simply to allow library authors to assert something meaningful about their level of OSGi compliance. I think that is a prerequisite before looking to verify those assertions.
+
+**UPDATE 2** BJ makes some excellent points in the comments below, which I entirely agree with. Be sure to scroll down and take a look.
