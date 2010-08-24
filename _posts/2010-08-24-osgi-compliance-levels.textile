@@ -25,7 +25,7 @@ For many libraries, there is no need to go any higher than level 1. The higher l
 
 |_.Level|_.Name|_.Notes|
 |2|OSGi-Assisted|(p).The framework is aware of OSGi, either in its core or via optional modules. Areas of the framework that are open to extensibility can use services for this, in addition to other mechanisms. The framework can cope with service dynamics without restarting the JVM.|
-|3|OSGi-Powered|(p).The framework is based on OSGi. It publishes services that may be used by other parts of our system. Its own services may be replaced by our own service implementations. It takes advantage of standard OSGi services such as Log Service, Config Admin, Event Admin, HTTP Service. However this it may still provide a way to run in non-OSGi environments.|
+|3|OSGi-Powered|(p).The framework is based on OSGi. It publishes services that may be used by other parts of our system. Its own services may be replaced by our own service implementations. It takes advantage of standard OSGi services such as Log Service, Config Admin, Event Admin, HTTP Service. However, despite all this it may still provide a way to run in non-OSGi environments.|
 
 A key concern for many frameworks as they seek to rise this pyramid is to remain usable outside OSGi, which is a goal I support. There appears to be very little information available on how to develop frameworks that are able to take advantage of OSGi without introducing a hard dependency on it. This is something I hope to remedy in future posts.
 
