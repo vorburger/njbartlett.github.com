@@ -21,6 +21,20 @@
      {% for css in page.css %}
        <link rel="stylesheet" href="{{ css }}" type="text/css" />
      {% endfor %}
+
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.5.0/load.js?mode=auto';
+
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
   </head>
   <body>
     <div id="ribbon"><a href="http://github.com/njbartlett"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/images/forkme_left_gray.png" alt="Fork me on GitHub" /></a></div>

@@ -3,7 +3,7 @@ layout: post
 title: OSGi Compliance Levels
 summary: Just what does "OSGi Compliant" mean, anyway?
 tags: osgi
-flattr: http://njbartlett.github.com/2010/08/24/osgi-compliance-levels.html
+flattr: http://njbartlett.name/2010/08/24/osgi-compliance-levels.html
 ---
 
 Almost every week, I hear about new and existing Java libraries or frameworks becoming "OSGi Compliant". This makes me happy as it indicates the traction that OSGi is getting as a platform. The only problem is that "OSGi Compliant" could mean almost anything... and therefore it means precisely nothing.
