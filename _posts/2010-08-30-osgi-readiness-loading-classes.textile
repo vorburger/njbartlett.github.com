@@ -73,7 +73,7 @@ OSGi's programming model is far less constrained. Bundles are free to create thr
 
 h2. Solutions
 
-Now let's discuss possible solutions. To be clear, all of the following suggestions are intended to supplement rather than replace existing approaches. *If your framework is working in J2SE/J2EE with @Class.forName()@ or TCCLs then you should not continue to use those approaches*. But, please provide additional options for runtime environments such as OSGi where those approaches fail.
+Now let's discuss possible solutions. To be clear, all of the following suggestions are intended to supplement rather than replace existing approaches. *If your framework is working in J2SE/J2EE with @Class.forName()@ or TCCLs then you should continue to use those approaches*. But, please provide additional options for runtime environments such as OSGi where those approaches fail.
 
 If you feel these suggestions are trivial or obvious — that is exactly the point. There is nothing complicated about making frameworks that work well in OSGi. Indeed, you may find you prefer using one of these patterns as they reduce the complexity and testing burden of your code.
 
