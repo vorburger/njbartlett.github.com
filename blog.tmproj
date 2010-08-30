@@ -54,23 +54,27 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2010-08-24-osgi-compliance-levels.textile</string>
+			<key>lastUsed</key>
+			<date>2010-08-24T23:38:50Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2010-08-19-changing-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-19T14:02:16Z</date>
+			<date>2010-08-23T22:13:05Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-08-16-osgi-masterclass-with-peter-kriens.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-19T14:02:16Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2010-08-23T22:13:08Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-08-10-generic-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-15T00:34:55Z</date>
+			<date>2010-08-23T22:13:07Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -88,19 +92,19 @@
 			<key>filename</key>
 			<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-05T20:44:32Z</date>
+			<date>2010-08-23T22:13:15Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-07-20-bndtools-now-in-eclipse-marketplace.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-05T20:44:35Z</date>
+			<date>2010-08-24T12:16:49Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-03-07-osgi-and-how-it-got-that-way.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-20T23:58:42Z</date>
+			<date>2010-08-23T22:13:10Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -112,7 +116,9 @@
 			<key>filename</key>
 			<string>_layouts/default.html</string>
 			<key>lastUsed</key>
-			<date>2010-08-12T10:35:09Z</date>
+			<date>2010-08-24T23:38:51Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -169,6 +175,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{153, 79}, {730, 799}}</string>
+	<string>{{188, 79}, {730, 799}}</string>
 </dict>
 </plist>
