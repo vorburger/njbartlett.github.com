@@ -697,7 +697,7 @@ TertiaryDark: #666
 Error: #f88
 </pre>
 </div>
-<div title="Component Tutorial" creator="Neil Bartlett" modifier="Neil Bartlett" created="201005072012" modified="201005191157" tags="excludeWikiWords" changecount="33">
+<div title="Component Tutorial" creator="Neil Bartlett" modifier="Neil Bartlett" created="201005072012" modified="201010120057" tags="excludeWikiWords" changecount="36">
 <pre>In this tutorial we will build a sample application composed of two components and an API. There will be a total of three bundles created, and in this case we will deliver all three bundles from the same bundle (see [[Using Sub-bundles]] for information on the pros and cons of delivering multiple bundles from a single project).
 
 &lt;&lt;showtoc&gt;&gt;
@@ -710,17 +710,17 @@ From the ''File'' menu, select ''New'' &gt; Bnd OSGi Project.
 
 [img[New Project Wizard|images/bndtools/newwizard_01_thumb.png]]
 
+If this is the first time you have used Bndtools, it is likely that you will see the &quot;Welcome&quot; dialog -- if so, click OK to setup the Bndtools workspace and import an initial repository.
+
+[img[Welcome to Bndtools Dialog|images/bndtools/welcome_thumb.png]]
+
 On the next page, enter {{{org.example}}} as the name of the project. Select at least J2SE-1.5 for the JRE execution environment.
 
 [img[New Project Wizard|images/bndtools/newwizard_02_thumb.png]]
 
-On the next page, you are offered a choice of static repositories to import into the workspace. These repositories host bundles that you may wish to use during development or runtime. We will use bundles from the Base repository, so leave this entry checked in the list and click Next. As this is the first time a repository has been configured, the tool will take a few seconds to copy in the contents.
+On the next page, you are offered a choice of project templates to start off your project. Select ''Use a Template'' and then choose ''Component Development'' from the list. Click Finish.
 
 [img[New Project Wizard|images/bndtools/newwizard_03_thumb.png]]
-
-The next page shows the bundles available in the workspace repository, which we can choose to add to the project build path. This is necessary if our project will use the APIs defined in those bundles. The list also contains &quot;libraries&quot;, which are aggregations of bundles that are expanded upon addition. For this tutorial, double click on the {{{lib.component-dev}}} library to add it to the right-hand list. This library contains: an annotations API that will be useful for defining components; the OSGi core and compendium APIs; and JUnit for testing.
-
-[img[New Project Wizard|images/bndtools/newwizard_04_thumb.png]]
 
 !! Points of Interest
 
