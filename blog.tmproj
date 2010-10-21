@@ -8,7 +8,7 @@
 			<key>filename</key>
 			<string>projects.textile</string>
 			<key>lastUsed</key>
-			<date>2010-07-26T13:18:41Z</date>
+			<date>2010-08-30T00:42:03Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -56,19 +56,33 @@
 			<key>filename</key>
 			<string>_posts/2010-08-24-osgi-compliance-levels.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-24T23:38:50Z</date>
+			<date>2010-09-01T11:10:54Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-08-30-osgi-readiness-loading-classes.textile</string>
+			<key>lastUsed</key>
+			<date>2010-09-19T11:40:24Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-09-11-modularity-without-services.textile</string>
+			<key>lastUsed</key>
+			<date>2010-10-21T10:22:59Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-08-19-changing-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-23T22:13:05Z</date>
+			<date>2010-10-21T09:58:58Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-08-16-osgi-masterclass-with-peter-kriens.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-23T22:13:08Z</date>
+			<date>2010-10-21T09:58:57Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -80,7 +94,7 @@
 			<key>filename</key>
 			<string>_posts/2010-08-05-when-servicetrackers-trump-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-10T00:36:08Z</date>
+			<date>2010-09-21T10:07:31Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -92,7 +106,7 @@
 			<key>filename</key>
 			<string>_posts/2010-07-19-factory-components-in-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-08-23T22:13:15Z</date>
+			<date>2010-08-30T01:10:07Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -117,8 +131,6 @@
 			<string>_layouts/default.html</string>
 			<key>lastUsed</key>
 			<date>2010-08-24T23:38:51Z</date>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -142,39 +154,10 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>319</integer>
 	<key>metaData</key>
-	<dict>
-		<key>_posts/2010-08-05-when-servicetrackers-trump-ds.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>19</integer>
-				<key>line</key>
-				<integer>58</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>47</integer>
-		</dict>
-		<key>projects.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>15</integer>
-				<key>line</key>
-				<integer>2</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{188, 79}, {730, 799}}</string>
+	<string>{{68, 64}, {730, 799}}</string>
 </dict>
 </plist>
