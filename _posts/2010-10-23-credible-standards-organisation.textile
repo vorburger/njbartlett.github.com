@@ -7,7 +7,7 @@ tags: java jcp osgi
 
 Doug Lea <a href="http://gee.cs.oswego.edu/dl/html/jcp22oct10.html">says that</a> "the JCP is no longer a credible specification and standards body". He's probably right.
 
-However, a credible specifications and standards body **does** exist in the Java universe. I will leave its identity as an exercise, but let me just point out a couple of its nicer characteristics.
+However, a credible specification and standards body **does** exist in the Java universe. I will leave its identity as an exercise, but let me just point out a couple of its nicer characteristics.
 
 * It produces **fantastic** quality specifications.
 * It has worked effectively for over ten years as a collaboration forum for competing companies.
