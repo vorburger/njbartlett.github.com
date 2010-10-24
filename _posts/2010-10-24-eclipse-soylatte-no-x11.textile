@@ -1,0 +1,30 @@
+---
+layout: post
+title: Eclipse on SoyLatte without X11
+summary: Java development on the Mac not dead yet
+tags: java macos soylatte eclipse
+---
+
+An <a href="http://www.theregister.co.uk/2010/10/21/apple_threatens_to_kill_java_on_the_mac/">article by Cade Metz</a> in The Register suggests that Apple's deprecation of Java is an attack on Android developers:
+
+<blockquote>
+	"If you don't have Java on the Mac, you can't run Java development tools such as Eclipse, IntelliJ, and NetBeans. And though there is a port of OpenJDK for the Mac, it's not quite complete. It's limited to the X11 windows system, and there's no support for native Mac GUIs.	
+
+	...
+
+	"The other salient point here is that if you don't have Java on the Mac, you can't use Google's Android SDK. Most Android development is done on Eclipse, and though Eclipse isn't required by the SDK, the Java environment is."
+</blockquote>
+
+Don't believe everything you read in El Reg, folks. **Eclipse runs just fine** on that <a href="http://landonf.bikemonkey.org/static/soylatte/">OpenJDK port (a.k.a. SoyLatte)</a> **without X11**. Here's a screenshot:
+
+!/images/posts/eclipse-soylatte.png!
+
+No, I can't tell a difference from normal Eclipse either, at least visually. It does feel a bit sluggish, so I assume that SoyLatte is not heavily optimised. But that's a fixable problem.
+
+<a href="http://www.eclipse.org/swt/">SWT</a> is the key. All the UI customisation work that Apple has put into its JVM was required to support Swing/AWT, which Eclipse does not use. Therefore Eclipse -- and Google's Android tools -- will work fine, even if Apple eradicates its JVM from future Mac OS releases and refuses to give its UI code to OpenJDK. The same goes for Eclipse RCP applications such as <a href="http://www.vuze.com/">Vuze</a> and <a href="http://www.rssowl.org/">RSSOwl</a>.
+
+Sadly the same may not be true of NetBeans and IntelliJ, since they build on a GUI technology that is both tightly coupled to the JVM and requires extensive customisation by the operating system vendor. I wouldn't miss those other IDEs myself, but it's good to have choice in the market, so I hope the situation improves for them soon.
+
+One more screenshot, here is the Eclipse 4.0 early access release:
+
+!/images/posts/e4-soylatte.png!
