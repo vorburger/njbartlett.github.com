@@ -54,9 +54,29 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
+			<key>lastUsed</key>
+			<date>2010-10-24T07:59:02Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-10-24-eclipse-soylatte-no-x11.textile</string>
+			<key>lastUsed</key>
+			<date>2010-10-24T07:59:01Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-10-21-bndtools-is-growing.textile</string>
+			<key>lastUsed</key>
+			<date>2010-10-22T23:48:04Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2010-08-24-osgi-compliance-levels.textile</string>
 			<key>lastUsed</key>
-			<date>2010-09-01T11:10:54Z</date>
+			<date>2010-10-21T14:20:02Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -69,20 +89,12 @@
 			<string>_posts/2010-09-11-modularity-without-services.textile</string>
 			<key>lastUsed</key>
 			<date>2010-10-21T10:22:59Z</date>
-			<key>selected</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>_posts/2010-08-19-changing-osgi.textile</string>
-			<key>lastUsed</key>
-			<date>2010-10-21T09:58:58Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-08-16-osgi-masterclass-with-peter-kriens.textile</string>
 			<key>lastUsed</key>
-			<date>2010-10-21T09:58:57Z</date>
+			<date>2010-10-21T23:56:37Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -94,7 +106,7 @@
 			<key>filename</key>
 			<string>_posts/2010-08-05-when-servicetrackers-trump-ds.textile</string>
 			<key>lastUsed</key>
-			<date>2010-09-21T10:07:31Z</date>
+			<date>2010-10-22T01:40:38Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -158,6 +170,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{68, 64}, {730, 799}}</string>
+	<string>{{79, 155}, {605, 699}}</string>
 </dict>
 </plist>

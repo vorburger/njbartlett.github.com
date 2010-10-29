@@ -28,3 +28,12 @@ Sadly the same may not be true of NetBeans and IntelliJ, since they build on a G
 One more screenshot, here is the Eclipse 4.0 early access release:
 
 !/images/posts/e4-soylatte.png!
+
+*UPDATE:* David asked in the comments *how* to actually run Eclipse on SoyLatte. It's quite simple. You need to open up the Eclipse.app launcher and edit the file @Contents/MacOS/eclipse.ini@. Assuming you have SoyLatte installed at @/usr/local/soylatte16-amd64@, insert the following two lines:
+
+{% highlight text %}
+-vm
+/usr/local/soylatte16-amd64/bin/java
+{% endhighlight %}
+
+These two line must go *above* the @-vmargs@ line.
