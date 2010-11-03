@@ -1,0 +1,24 @@
+---
+layout: post
+title: OSGi Masterclass is Coming to America
+summary: Mastery of OSGi now available in the USA
+tags: java osgi masterclass
+---
+
+!/images/posts/logo-masterclass-201101.png!:http://www.aqute.biz/MasterClass/201101-02
+
+The <a href="http://www.aqute.biz/MasterClass/201101-02">Masterclass on OSGi</a> is coming to the USA!
+
+After a successful first go in our back yard -- i.e., Europe -- Peter Kriens and I have fixed a date and location for the USA Edition: 18th to 21st January 2011 in Pleasanton California.
+
+I've never been to Pleasanton but it sounds... well, pleasant. And it's convenient too, being accessible by BART from San Francisco city and airport. But then again it's not *too* close to all those distracting highlights of the big city, and this is something we learned from the first class: a little bit of isolation helps to create a "pressure cooker" in which the ideas bounce around at high speed. It's exhausting, but definitely extracts a lot of value for the attendees.
+
+!>/images/masterclass01/2_web.jpeg!
+
+As for the format of the class, it is very different from your usual structured training. The masterclass is about achieving mastery of OSGi, and that cannot be done with a fixed slide deck. Instead we will look at the subjects that interest you, and work out how to apply OSGi to the challenges you see in your environment. Peter and I won't always have all the answers, but we usually know the right questions and have the experience to reach towards a solution together. But we also expect to have our own opinions and assumptions challenged.
+
+Needless to say though, we believe that our knowledge of OSGi is second to none. And I don't mean to imply that we don't have any slides, or that we have not prepared anything. I have a vast slide deck from my normal training courses, but this will serve as back-up material rather than driving the class.
+
+The price for the 4-day class is a very reasonable $2200, or $2000 if you register before 1st December. Also if you are attending ApacheCon in Atlanta this week, we have a special discount code for you which will be advertised at the Felix/OSGi meet-up on Thursday evening, and the OSGi Track on Friday.
+
+<a href="http://www.regonline.com/Register/Checkin.aspx?EventID=909496">REGISTER HERE</a>.

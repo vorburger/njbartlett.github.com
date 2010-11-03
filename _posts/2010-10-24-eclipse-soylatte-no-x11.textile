@@ -36,4 +36,4 @@ One more screenshot, here is the Eclipse 4.0 early access release:
 /usr/local/soylatte16-amd64/bin/java
 {% endhighlight %}
 
-These two line must go *above* the @-vmargs@ line.
+These two lines must go *above* the @-vmargs@ line.

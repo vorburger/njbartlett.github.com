@@ -91,6 +91,9 @@ h1 a, h1 a:link, h1 a:visited {
   border: 1px solid #ccc;
   padding: 0px 15px;
 }
+#content img {
+	margin: 5px;
+}
 
 h3 {
   margin: 0 0 10px 0;
