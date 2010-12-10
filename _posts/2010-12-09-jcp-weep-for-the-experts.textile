@@ -1,0 +1,36 @@
+---
+layout: post
+title: The JCP... Weep for the Experts
+summary: Trying to make sense of it all
+tags: java jcp apache
+---
+
+Recently I have preferred to stay away from political blog posts, but the occasion of <a href="https://blogs.apache.org/foundation/entry/the_asf_resigns_from_the">Apache's departure from the Java Community Process</a> (JCP) seems a fitting time to fulminate, just this once.
+
+As Bill Joy once said:
+
+bq. "Most smart people don't work here... for any definition of 'here'."
+
+A deep understanding that principle, and of the value of diversity, led Sun to create the JCP. Java became strong not as a barbershop quartet singing in perfect harmony, but as a massive, heaving soccer crowd baying for their team. The neutering of the JCP threatens to turn that crowd into a bunch of North Korean rent-a-fans.
+
+There will inevitably be a loss of diversity of brain-power feeding into the Java specification.  Java has never been the product of just one company: Sun made a major contribution, yes, but so did IBM, BEA, Ericsson and countless others. They contributed their time, effort and in many cases intellectual property to improving Java because the JCP offered a legal framework for their work to be distributed as an open platform, which benefited everybody.
+
+That framework was called the Java Specification Participation Agreement (JSPA), and it meant that intellectual property from the Experts on an Expert Group flowed via the Spec Lead and into the final specification, so that independent implementations could be built without fear of copyright or patent claims -- so long as they passed the TCK. Stephen Colebourne has a nice pictorial guide to this process in <a href="http://www.jroller.com/scolebourne/entry/sun_apache_ip_in_pictures">one of his blog posts.</a>
+
+It was the JSPA that Sun and later Oracle broke by refusing to allow Apache to test Harmony with the TCK without "Field of Use" restrictions. The refusal was all the more egregious because it was not entirely their property to withold.
+
+So what motivation would an expert now have to serve on a JSR Expert Group?
+
+Take for example Bob "Crazy Bob" Lee, author of Guice, major contributor to the Google Collections API and spec lead of JSR 330, the fastest ever JSR. He was invited to join the expert groups of both the Java 7 and Java 8 JSRs. He is undoubtedly an expert and would have made an excellent contribution to those JSRs... but he <a href="http://blog.crazybob.org/2010/11/java-se-7-8.html">declined to participate</a>. After all, why on Earth should Bob spend his valuable time working on a JSR when the fruits of his labour would be taken by Oracle?
+
+Doug Lea, who probably knows more about concurrency than anybody on the planet, <a href="http://gee.cs.oswego.edu/dl/html/jcp22oct10.html">resigned from the JCP in disgust</a> for similar reasons. Oddly he continues to work on the OpenJDK, but this is because he is a researcher and it is still possible for him to perform novel research in a closed platform, and Java *is* still the most advanced managed runtime environment. Wouldn't he jump ship though if a similarly advanced but more open platform were to emerge? Admittedly I'm speculating about that because I don't know Doug at all.
+
+Other resignations include <a href="http://tembrel.blogspot.com/2010/12/resigned-from-ec.html">Tim Peierls</a> and of course Apache. Google will probably follow shortly. They have all realised that they were giving their work and IP to improve a proprietary Oracle product... for nothing.
+
+The primary remaining motivator is *money*. Experts will be drawn from the set of people paid by Oracle, directly or indirectly. Oracle employees, obviously. IBM employess too, since it's clear that Oracle wrote IBM a fat cheque to get them to abandon Harmony and join OpenJDK... the details of the deal are private but I _sincerely_ hope they emerge on WikiLeaks some day.
+
+The result will be a dreadful monoculture. Many smart people work at Oracle and IBM, but even more don't. End users will not have their say, except through official Oracle or IBM sales channels, hence the joke that JCP now stands for "Just Customers Please". Vendors of small, alternative frameworks will either not contribute or their contributions will be appropriated and assimilated.
+
+Meanwhile, less pessimistic souls are congratulating Oracle for finally getting Java moving again. Well, _Il Duce_ made the trains run on time. Enough said.
+
+Sigh. What's a poor Java developer to do? I'm not certainly giving up the platform just yet because there still aren't any better games in town. All the same, it seems wiser than ever to transfer *at least* a few eggs to alternative baskets. Just in case.
