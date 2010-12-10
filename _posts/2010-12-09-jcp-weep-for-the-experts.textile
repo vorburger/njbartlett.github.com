@@ -11,7 +11,7 @@ As Bill Joy once said:
 
 bq. "Most smart people don't work here... for any definition of 'here'."
 
-A deep understanding that principle, and of the value of diversity, led Sun to create the JCP. Java became strong not as a barbershop quartet singing in perfect harmony, but as a massive, heaving soccer crowd baying for their team. The neutering of the JCP threatens to turn that crowd into a bunch of North Korean rent-a-fans.
+A deep understanding of that principle, and of the value of diversity, led Sun to create the JCP. Java became strong not as a barbershop quartet singing in perfect harmony, but as a massive, heaving soccer crowd baying for their team. The neutering of the JCP threatens to turn that crowd into a bunch of North Korean rent-a-fans.
 
 There will inevitably be a loss of diversity of brain-power feeding into the Java specification.  Java has never been the product of just one company: Sun made a major contribution, yes, but so did IBM, BEA, Ericsson and countless others. They contributed their time, effort and in many cases intellectual property to improving Java because the JCP offered a legal framework for their work to be distributed as an open platform, which benefited everybody.
 
@@ -27,7 +27,7 @@ Doug Lea, who probably knows more about concurrency than anybody on the planet, 
 
 Other resignations include <a href="http://tembrel.blogspot.com/2010/12/resigned-from-ec.html">Tim Peierls</a> and of course Apache. Google will probably follow shortly. They have all realised that they were giving their work and IP to improve a proprietary Oracle product... for nothing.
 
-The primary remaining motivator is *money*. Experts will be drawn from the set of people paid by Oracle, directly or indirectly. Oracle employees, obviously. IBM employess too, since it's clear that Oracle wrote IBM a fat cheque to get them to abandon Harmony and join OpenJDK... the details of the deal are private but I _sincerely_ hope they emerge on WikiLeaks some day.
+The primary remaining motivator is *money*. Experts will be drawn from the set of people paid by Oracle, directly or indirectly. Oracle employees, obviously. IBM employees too, since it's clear that Oracle wrote IBM a fat cheque to get them to abandon Harmony and join OpenJDK... the details of the deal are private but I _sincerely_ hope they emerge on WikiLeaks some day.
 
 The result will be a dreadful monoculture. Many smart people work at Oracle and IBM, but even more don't. End users will not have their say, except through official Oracle or IBM sales channels, hence the joke that JCP now stands for "Just Customers Please". Vendors of small, alternative frameworks will either not contribute or their contributions will be appropriated and assimilated.
 
