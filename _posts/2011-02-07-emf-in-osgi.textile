@@ -3,7 +3,7 @@ layout: post
 title: Using EMF in OSGi
 summary: Modular modelling? 
 tags: java emf osgi eclipse
-date: '07/02/2011 14:30'
+date: '02/07/2011 14:30'
 ---
 
 It's official -- I ♥ "EMF":http://www.eclipse.org/emf!
