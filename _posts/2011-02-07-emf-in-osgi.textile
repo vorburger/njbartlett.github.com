@@ -7,7 +7,7 @@ tags: java emf osgi eclipse
 
 It's official -- I ♥ "EMF":http://www.eclipse.org/emf!
 
-This is a surprise to me. I previously regarded modelling in general and EMF specifically as a sort of cult... obscure jargon, terrible documentation, unbearably aloof and patronising "talk abstracts":http://www.eclipsecon.org/2009/sessions?id=358... but all that's behind me now. I see the light: it's all about the industrialisation of software, which requires both _compentisation_ and _automation_. OSGi provides admirably for the first, and perhaps EMF can provide for the second.
+This is a surprise to me. I previously regarded modelling in general and EMF specifically as a sort of cult... obscure jargon, terrible documentation, unbearably aloof and patronising "talk abstracts":http://www.eclipsecon.org/2009/sessions?id=358... but all that's behind me now. I see the light: it's all about the industrialisation of software, which requires both _componentisation_ and _automation_. OSGi provides admirably for the first, and perhaps EMF can provide for the second.
 
 However I wouldn't say I'm an _entirely_ orthodox EMFite. I've had to hack it about a bit, primarily to get it to work properly OSGi. At first blush using EMF in OSGi may seem trivial, after all, Eclipse is an OSGi application and EMF is designed to work in Eclipse, so EMF must work well in OSGi. Also: all cats have four legs; my dog has four legs; therefore my dog is a cat. Ahem.
 
