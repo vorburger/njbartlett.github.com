@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>_posts/2011-01-24-emf-in-osgi.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -54,15 +56,17 @@
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>_posts/2010-10-29-osgi-and-bndtools-at-apachecon.textile</string>
+			<string>_posts/2011-01-24-emf-in-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2010-10-30T22:12:23Z</date>
+			<date>2011-01-28T01:01:05Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
 			<key>lastUsed</key>
-			<date>2010-11-15T13:01:24Z</date>
+			<date>2011-01-24T01:00:56Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -117,8 +121,6 @@
 			<string>_posts/2010-07-29-eclipse-java6u21-blame-game.textile</string>
 			<key>lastUsed</key>
 			<date>2010-08-05T20:34:50Z</date>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -172,10 +174,60 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>319</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>_posts/2010-10-23-credible-standards-organisation.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+		</dict>
+		<key>_posts/2011-01-24-emf-in-osgi.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>89</integer>
+				<key>line</key>
+				<integer>13</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>_posts/2011-01-24-emf-in-osgi.textile</string>
+		<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{79, 155}, {605, 699}}</string>
+	<string>{{786, 179}, {605, 699}}</string>
 </dict>
 </plist>
