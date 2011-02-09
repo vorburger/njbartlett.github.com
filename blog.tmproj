@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
+	<string>_posts/2011-02-08-uses-constraints.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -56,23 +56,29 @@
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>_posts/2011-02-07-emf-in-osgi.textile</string>
+			<string>_posts/2011-02-08-uses-constraints.textile</string>
 			<key>lastUsed</key>
-			<date>2011-02-07T13:53:02Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
-			<key>lastUsed</key>
-			<date>2011-02-07T13:53:02Z</date>
+			<date>2011-02-08T14:56:50Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2011-02-07-emf-in-osgi.textile</string>
+			<key>lastUsed</key>
+			<date>2011-02-08T12:41:24Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
+			<key>lastUsed</key>
+			<date>2011-02-08T12:40:47Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2010-10-24-eclipse-soylatte-no-x11.textile</string>
 			<key>lastUsed</key>
-			<date>2010-10-29T09:26:21Z</date>
+			<date>2011-02-08T14:56:50Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -175,14 +181,28 @@
 	<integer>319</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_posts/2010-10-23-credible-standards-organisation.textile</key>
+		<key>_posts/2010-10-24-eclipse-soylatte-no-x11.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>15</integer>
+				<key>line</key>
+				<integer>38</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_posts/2011-02-07-emf-in-osgi.textile</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>9</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -202,13 +222,29 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>9</integer>
 			</dict>
+		</dict>
+		<key>_posts/2011-02-08-uses-constraints.textile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>29</integer>
+				<key>line</key>
+				<integer>182</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>384</integer>
+			<key>firstVisibleLine</key>
+			<integer>173</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>_posts/2010-10-23-credible-standards-organisation.textile</string>
+		<string>_posts/2011-02-07-emf-in-osgi.textile</string>
+		<string>_posts/2011-02-08-uses-constraints.textile</string>
+		<string>_posts/2010-10-24-eclipse-soylatte-no-x11.textile</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
