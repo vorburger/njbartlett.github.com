@@ -32,7 +32,22 @@ Are you surprised that this works? Perhaps not, you may have heard that OSGi sup
 
 !/images/posts/usesconstraint/4.png!
 
-Notice how the shaded area avoids the import of foo inside bundle B -- this is only possible if the package bar exported by B has no internal dependency on foo. However if package bar _does_ depend on package foo, then we have a "uses constraint". We illustrate this with a little rubber band, like so:
+Notice how the shaded area avoids the import of foo inside bundle B. This is only possible if the package bar exported by B -has no internal dependency on foo- does not "expose" foo via its signature (thanks to BJ for this correction). 
+
+Exposing foo means that a type in foo is visible through the signature of a type in bar, for example:
+
+{% highlight java %}
+package bar;
+
+import foo.Foo;
+
+public class Bar extends Foo {   // exposure via subclassing
+    public Foo getFoo();         // exposure via method return type
+    public void setFoo(Foo foo); // exposure via method parameter
+}
+{% endhighlight %}
+
+If package bar _does_ expose package foo, as in this example, then we have a "uses constraint". We illustrate this with a little rubber band, like so:
 
 !/images/posts/usesconstraint/5.png!
 
