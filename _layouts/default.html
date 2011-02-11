@@ -35,6 +35,19 @@
 	    })();
 	/* ]]> */
 	</script>
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-651561-4']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	/* ]]> */
+	</script>
   </head>
   <body>
     <div id="ribbon"><a href="http://github.com/njbartlett"><img style="position: absolute; top: 0; left: 0; border: 0;" src="/images/forkme_left_gray.png" alt="Fork me on GitHub" /></a></div>
@@ -61,7 +74,7 @@
 	{% endif %}
 	</div>
 
-      <h1>Neil's point-free blog</h1>
+      <h1>Neil Bartlett</h1>
       
       <div class="clear"></div>
       
@@ -115,33 +128,6 @@
     {% for js in page.javascript %}
       <script type="text/javascript" src="{{ js }}"></script>
     {% endfor %}
-
-	{% comment %}
-    <script type="text/javascript">
-    //<![CDATA[
-    (function() {
-    		var links = document.getElementsByTagName('a');
-    		var query = '?';
-    		for(var i = 0; i < links.length; i++) {
-    			if(links[i].href.indexOf('#disqus_thread') >= 0) {
-    				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-    			}
-    		}
-        document.write('<script type="text/javascript" src="http://disqus.com/forums/njbartlett/get_num_replies.js' + query + '"></' + 'script>');
-    	})();
-    //]]>
-    </script>
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      </script>
-      <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-254246-10");
-      pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
-	{% endcomment %}
 
   </body>
 </html>
