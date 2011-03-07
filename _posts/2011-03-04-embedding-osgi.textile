@@ -51,6 +51,13 @@ Note that as a general principle, when we want to install a set of bundles we sh
 
 Also bear in mind that there is no error handling in the above code. To improve this we should catch any exceptions on install or start, so that we can still install/start the other bundles.
 
+*UPDATE:* another thing to be careful of is fragment bundles. Fragments cannot be started, so the @bundle.start()@ line will throw an exception if the installed bundle was a fragment. You may want to add the following check to avoid those exceptions:
+
+{% highlight java %}
+if (bundle.getHeaders().get(Constants.FRAGMENT_HOST) == null)
+	bundle.start();
+{% endhighlight %}
+
 h2. Handling Shutdown
 
 Once the framework is running with the bundles you want, you should just let it run until it finishes. Usually the shutdown signal should come from within OSGi, for example the user might type @shutdown@ at the Felix shell. This would stop the framework, and you would normally want to do something after this has happened.

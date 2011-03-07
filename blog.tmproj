@@ -54,9 +54,15 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2011-03-04-embedding-osgi.textile</string>
+			<key>lastUsed</key>
+			<date>2011-03-07T12:12:44Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2011-02-09-uses-constraints.textile</string>
 			<key>lastUsed</key>
-			<date>2011-02-28T13:09:06Z</date>
+			<date>2011-03-04T07:16:25Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -96,12 +102,6 @@
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>_posts/2010-09-11-modularity-without-services.textile</string>
-			<key>lastUsed</key>
-			<date>2010-10-21T10:22:59Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
 			<string>_posts/2010-08-16-osgi-masterclass-with-peter-kriens.textile</string>
 			<key>lastUsed</key>
 			<date>2010-10-21T23:56:37Z</date>
@@ -110,7 +110,9 @@
 			<key>filename</key>
 			<string>_posts/2010-08-10-generic-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2010-10-29T09:26:21Z</date>
+			<date>2011-03-07T12:12:47Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -153,8 +155,6 @@
 			<string>_layouts/default.html</string>
 			<key>lastUsed</key>
 			<date>2011-02-28T13:11:48Z</date>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -182,6 +182,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{304, 94}, {750, 784}}</string>
+	<string>{{539, 98}, {833, 780}}</string>
 </dict>
 </plist>
