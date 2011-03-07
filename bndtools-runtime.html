@@ -513,7 +513,7 @@ Also see [[AdvancedOptions]]</pre>
 </div>
 <!--POST-SHADOWAREA-->
 <div id="storeArea">
-<div title="BigLinkButtonPlugin" modifier="NeilBartlett" created="200808130000" modified="201004292329" tags="systemConfig excludeSearch excludeLists" changecount="18" wikiformat="" server.page.revision="200808130000" server.host="www.tiddlywiki.com" server.type="file">
+<div title="BigLinkButtonPlugin" modifier="NeilBartlett" created="200808130000" modified="201004292329" tags="systemConfig excludeSearch excludeLists" server.type="file" server.host="www.tiddlywiki.com" server.page.revision="200808130000" wikiformat="" changecount="18">
 <pre>//{{{
 if(!version.extensions.BigLinkButtonPlugin) {
     version.extensions.BigLinkButtonPlugin = {installed:true};
@@ -642,7 +642,22 @@ osgi.console=
 |{{{bndtools.launcher.shutdownOnError}}} |&quot;true&quot; or &quot;false&quot; -- whether to shutdown the framework if some bundles could not be installed/started. |false |
 </pre>
 </div>
-<div title="BndtoolsRuntimeEclipse" creator="NeilBartlett" modifier="Neil Bartlett" created="201005011114" modified="201005072150" tags="bndtools eclipse osgi" wikiformat="" changecount="26">
+<div title="BndtoolsRuntimeController" creator="YourName" modifier="YourName" created="201102130313" modified="201102130347" tags="osgi bndtools" wikiformat="" changecount="30">
+<pre>The bundle {{{bndtools.runtime.controller}}} creates a control channel for inspecting and manipulating the OSGi runtime. It is implemented as an HTTP REST protocol.
+
+! Bundles API Reference
+
+|!Request |!Operation |!Return |
+|{{{GET /bundles/}}} |List bundles |200: ListOfBundles |
+|{{{POST /bundles/}}} |Install bundles; the bundles must be supplied as one or more file uploads. |201: ListOfBundles |
+|{{{GET /bundles/&lt;BUNDLE_ID&gt;}}} |Bundle details |200: Bundle details. 404: No such bundle. |
+|{{{PUT /bundles/&lt;BUNDLE_ID&gt;}}} |Update bundle with supplied file in uploads. Never creates a new bundle. |200: ListOfBundles. 404: No such bundle. |
+|{{{PUT /bundles/&lt;BUNDLE_ID&gt;/update}}} |Update bundle from its previous location. Never creates a new bundle. |200: ListOfBundles. 404: No such bundle. |
+|{{{PUT /bundles/&lt;BUNDLE_ID&gt;/start}}} |Start the bundle |200: ListOfBundles. 404: No such bundle. |
+|{{{PUT /bundles/&lt;BUNDLE_ID&gt;/stop}}} |Stop the bundle |200: ListOfBundles. 404: No such bundle. |
+|{{{DELETE /bundles/&lt;BUNDLE_ID&gt;}}} |Uninstall bundle. No error returned on failure, due to idempotency requirement of DELETE method. |200: ListOfBundles. |</pre>
+</div>
+<div title="BndtoolsRuntimeEclipse" creator="NeilBartlett" modifier="Neil Bartlett" created="201005011114" modified="201005072150" tags="bndtools eclipse osgi" changecount="26" wikiformat="">
 <pre>[[BndtoolsRuntimeEclipse]] is a project delivering runtime bundles for use in Eclipse Applications. It currently contains one bundle, Applaunch, which can be used to launch Eclipse Applications -- including RCP or full Eclipse SDK -- in the [[BndtoolsLauncher]] environment.
 
 &lt;&lt;showtoc&gt;&gt;
@@ -675,7 +690,7 @@ The Applaunch bundle has just one configurable property, which it reads from the
 |!PROPERTY |!DESCRIPTION |!DEFAULT |
 |{{{bndtools.runtime.eclipse.applaunch.keepAlive}}} |Whether to keep the OSGi framework running after application finishes. If this property is not set to {{{true}}} then the applaunch bundle will attempt to shutdown the OSGi framework after the main application has completed, which is the default behaviour in Eclipse SDK and Eclipse RCP. |{{{false}}} |</pre>
 </div>
-<div title="BndtoolsRuntimeJUnit" creator="NeilBartlett" modifier="Neil Bartlett" created="201005020021" modified="201005131557" tags="testing excludeWikiWords" wikiformat="" changecount="35">
+<div title="BndtoolsRuntimeJUnit" creator="NeilBartlett" modifier="Neil Bartlett" created="201005020021" modified="201005131557" tags="testing excludeWikiWords" changecount="35" wikiformat="">
 <pre>[[BndtoolsRuntimeJUnit]] is a runtime OSGi bundle used for integration testing. Please see the [[Tutorial|Integration Testing Tutorial]] for an introduction to its concepts, and a worked example.
 
 &lt;&lt;showtoc&gt;&gt;
@@ -737,7 +752,7 @@ Therefore BndtoolsRuntimeJUnit offers an API that can simplify common testing ta
 
 I am actively seeking contributions to support additional testing frameworks; specifically support for JUnit4 and TestNG is needed. Please [[fork me on GitHub|http://github.com/njbartlett/bndtools.runtime.junit]] if you would like to work on these areas.</pre>
 </div>
-<div title="BndtoolsRuntimeJUnitProperties" creator="NeilBartlett" modifier="Neil Bartlett" created="201005020744" modified="201005142306" wikiformat="" changecount="5">
+<div title="BndtoolsRuntimeJUnitProperties" creator="NeilBartlett" modifier="Neil Bartlett" created="201005020744" modified="201005142306" changecount="5" wikiformat="">
 <pre>The BndtoolsRuntimeJUnit bundle understands the following properties, which may be made available via the OSGi framework configuration:
 
 |!PROPERTY |!DESCRIPTION |!DEFAULT |
@@ -747,7 +762,7 @@ I am actively seeking contributions to support additional testing frameworks; sp
 |{{{bndtools.runtime.junit.threadPoolSize}}} |The number of threads to allocate to the testing pool. |1 |
 </pre>
 </div>
-<div title="ChunkyButtonStyle" modifier="NeilBartlett" created="200808130000" modified="201005010230" changecount="8" wikiformat="" server.page.revision="200808130000" server.host="www.tiddlywiki.com" server.type="file">
+<div title="ChunkyButtonStyle" modifier="NeilBartlett" created="200808130000" modified="201005010230" server.type="file" server.host="www.tiddlywiki.com" server.page.revision="200808130000" wikiformat="" changecount="8">
 <pre>/*{{{*/
 span.chunkyButton {
 	display: block;
@@ -791,7 +806,7 @@ span.chunkyButton a.button:hover {
 }
 /*}}}*/</pre>
 </div>
-<div title="DcTableOfContentsPlugin" modifier="NeilBartlett" created="200711141727" modified="201005010233" tags="plugins macros systemConfig" changecount="3" server.type="file" server.host="devpad.tiddlyspot.com/#DcTableOfContentsPlugin" server.page.revision="200805121322">
+<div title="DcTableOfContentsPlugin" modifier="NeilBartlett" created="200711141727" modified="201005010233" tags="plugins macros systemConfig" server.page.revision="200805121322" server.host="devpad.tiddlyspot.com/#DcTableOfContentsPlugin" server.type="file" changecount="3">
 <pre>/***
 |Name|DcTableOfContentsPlugin|
 |Author|[[Doug Compton|http://www.zagware.com/tw/plugins.html#DcTableOfContentsPlugin]]|
@@ -1048,7 +1063,7 @@ window.scrollToHeading = function(title, anchorName, evt) {
 <div title="DefaultTiddlers" creator="NeilBartlett" modifier="NeilBartlett" created="201004242332" modified="201005010156" changecount="6">
 <pre>[[Welcome]]</pre>
 </div>
-<div title="DisableWikiLinksPlugin" modifier="ELSDesignStudios" created="200512092239" modified="200807230133" tags="systemConfig" server.type="file" server.host="www.tiddlytools.com/#DisableWikiLinksPlugin" server.page.revision="200807230133">
+<div title="DisableWikiLinksPlugin" modifier="ELSDesignStudios" created="200512092239" modified="200807230133" tags="systemConfig" server.page.revision="200807230133" server.host="www.tiddlytools.com/#DisableWikiLinksPlugin" server.type="file">
 <pre>/***
 |Name|DisableWikiLinksPlugin|
 |Source|http://www.TiddlyTools.com/#DisableWikiLinksPlugin|
@@ -1215,7 +1230,7 @@ The [[BndtoolsLauncher]] runtime solves the main-thread problem in a framework-a
 
 This is done by the [[BndtoolsRuntimeEclipse]] &quot;Applaunch&quot; bundle, which provides an ApplicationLauncher service that simply delegates to the Executor provided by the launcher. Therefore to run Eclipse applications under BndtoolsLauncher, simply install and activate bundle {{{bndtools.eclipse.applaunch}}}.</pre>
 </div>
-<div title="EditTemplate" creator="NeilBartlett" modifier="NeilBartlett" created="201004281050" modified="201004300110" wikiformat="" changecount="6">
+<div title="EditTemplate" creator="NeilBartlett" modifier="NeilBartlett" created="201004281050" modified="201004300110" changecount="6" wikiformat="">
 <pre>&lt;!--{{{--&gt;
 &lt;div class='toolbar' macro='toolbar [[ToolbarCommands::EditToolbar]]'&gt;&lt;/div&gt;
 &lt;div class='title' macro='view title'&gt;&lt;/div&gt;
@@ -1225,7 +1240,7 @@ This is done by the [[BndtoolsRuntimeEclipse]] &quot;Applaunch&quot; bundle, whi
 &lt;div class='editor' macro='edit tags'&gt;&lt;/div&gt;&lt;div class='editorFooter'&gt;&lt;span macro='message views.editor.tagPrompt'&gt;&lt;/span&gt;&lt;span macro='tagChooser excludeLists'&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;!--}}}--&gt;</pre>
 </div>
-<div title="ImageSizePlugin" modifier="ELSDesignStudios" created="200801180032" modified="200902270002" tags="IconPackage systemConfig" server.type="file" server.host="www.tiddlytools.com/#ImageSizePlugin" server.page.revision="200902270002">
+<div title="ImageSizePlugin" modifier="ELSDesignStudios" created="200801180032" modified="200902270002" tags="IconPackage systemConfig" server.page.revision="200902270002" server.host="www.tiddlytools.com/#ImageSizePlugin" server.type="file">
 <pre>/***
 |Name|ImageSizePlugin|
 |Source|http://www.TiddlyTools.com/#ImageSizePlugin|
@@ -1572,7 +1587,19 @@ Testing correct behaviour in the face of concurrent changes is something that fe
 
 [img(150px,)[images/osi_logo.png]]</pre>
 </div>
-<div title="MainMenu" creator="NeilBartlett" modifier="Neil Bartlett" created="201004242148" modified="201005072152" tags="meta" changecount="26" wikiformat="">
+<div title="ListOfBundles" creator="YourName" modifier="YourName" created="201102130325" modified="201102130325" tags="bndtools osgi" wikiformat="" changecount="2">
+<pre>A list of bundles in the BndtoolsRuntimeController REST API has the following format:
+
+Each bundle appears on one line terminated by a single newline character.
+
+A bundle line consists of the following fields, separated by commas:
+
+* ID
+* Bundle Symbolic Name
+* Location
+* State ({{{INSTALLED}}}, {{{UNINSTALLED}}}, {{{RESOLVED}}}, {{{STARTING}}}, {{{STARTING/LAZY}}}, {{{ACTIVE}}}, {{{STOPPING}}}).</pre>
+</div>
+<div title="MainMenu" creator="NeilBartlett" modifier="Neil Bartlett" created="201004242148" modified="201005072152" tags="meta" wikiformat="" changecount="26">
 <pre>[[Welcome]]
 [[Launcher|BndtoolsLauncher]]
 [[Eclipse|BndtoolsRuntimeEclipse]]
@@ -1603,7 +1630,7 @@ if(!version.extensions.MyMacros) {
 
 /*}}}*/</pre>
 </div>
-<div title="PageTemplate" modifier="NeilBartlett" created="200701090002" modified="201005010228" tags="MPTWTheme" changecount="10" server.page.revision="200708091512" server.host="tiddlythemes.com/empties/MPTW.html" server.type="file">
+<div title="PageTemplate" modifier="NeilBartlett" created="200701090002" modified="201005010228" tags="MPTWTheme" server.type="file" server.host="tiddlythemes.com/empties/MPTW.html" server.page.revision="200708091512" changecount="10">
 <pre>&lt;!--{{{--&gt;
 &lt;div class='header' macro='gradient vert [[ColorPalette::PrimaryLight]] [[ColorPalette::PrimaryMid]]'&gt;
 	&lt;div class='headerShadow'&gt;
@@ -1648,7 +1675,7 @@ src=&quot;http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png&quo
 <div title="SiteUrl" creator="NeilBartlett" modifier="Neil Bartlett" created="201004250027" modified="201005072142" changecount="2">
 <pre>http://njbartlett.github.com/bndtools-runtime.html</pre>
 </div>
-<div title="StyleSheet" creator="NeilBartlett" modifier="Neil Bartlett" created="200701090003" modified="201005072321" tags="MPTWTheme" wikiformat="" changecount="24" server.page.revision="200708091512" server.host="tiddlythemes.com/empties/MPTW.html" server.type="file">
+<div title="StyleSheet" creator="NeilBartlett" modifier="Neil Bartlett" created="200701090003" modified="201005072321" tags="MPTWTheme" server.type="file" server.host="tiddlythemes.com/empties/MPTW.html" server.page.revision="200708091512" changecount="24" wikiformat="">
 <pre>/*{{{*/
 /* a contrasting background so I can see where one tiddler ends and the other begins */
 body {
@@ -1846,7 +1873,7 @@ pre {
 /*}}}*/
 </pre>
 </div>
-<div title="StyleSheetShortcuts" modifier="ELSDesignStudios" created="200611070646" modified="200910050520" tags="CSS ThemePackage QuickEditPackage" server.page.revision="200910050520" server.host="www.TiddlyTools.com/#StyleSheetShortcuts" server.type="file">
+<div title="StyleSheetShortcuts" modifier="ELSDesignStudios" created="200611070646" modified="200910050520" tags="CSS ThemePackage QuickEditPackage" server.type="file" server.host="www.TiddlyTools.com/#StyleSheetShortcuts" server.page.revision="200910050520">
 <pre>/***
 |Name|StyleSheetShortcuts|
 |Source|http://www.TiddlyTools.com/#StyleSheetShortcuts|
@@ -2129,13 +2156,15 @@ These 'style tweaks' can be easily included in other stylesheet tiddler so they 
 &lt;div class='tagClear'&gt;&lt;/div&gt;
 &lt;!--}}}--&gt;</pre>
 </div>
-<div title="Welcome" creator="NeilBartlett" modifier="Neil Bartlett" created="201005011103" modified="201005072151" tags="bndtools osgi" changecount="26" wikiformat="">
+<div title="Welcome" creator="NeilBartlett" modifier="YourName" created="201005011103" modified="201102130326" tags="bndtools osgi" wikiformat="" changecount="29">
 <pre>This page aggregates several ~OSGi-related runtime utilities and bundles. Although most are designed to work with the [[Bndtools]] development environment, they are also useful as standalone utilities or embedded inside other tools such as ANT, Maven, ~NetBeans, etc. The following projects exist:
 
 |!Project |!Description |
 |[[BndtoolsLauncher]] |A lightweight and framework-agnostic ~OSGi launcher application. |
+|[[BndtoolsRuntimeController]]|Runtime bundle for controlling the OSGi framework|
 |[[BndtoolsRuntimeEclipse]] |Runtime bundles for working with Eclipse RCP or SDK applications. |
-|[[BndtoolsRuntimeJUnit]] |Runtime bundles for integration testing. |</pre>
+|[[BndtoolsRuntimeJUnit]] |Runtime bundles for integration testing. |
+</pre>
 </div>
 </div>
 <!--POST-STOREAREA-->

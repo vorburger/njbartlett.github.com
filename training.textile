@@ -3,11 +3,15 @@ layout: default
 title: Training
 ---
 
+h2. Eclipse RCP -- Updated!
+
+I offer a 4-day Eclipse RCP course that is original 
+
 h2. OSGi Masterclass with Peter Kriens
 
-"Peter Kriens":http://www.osgi.org/blog and I will be running an "OSGi Masterclass":http://www.aqute.biz/MasterClass/MasterClass in Girona, Spain from the 13th to 15th October 2010.
+The "OSGi Master Class":http://www.aqute.biz/MasterClass/MasterClass with "Peter Kriens":http://www.osgi.org/blog will be coming again soon! Here is some information from last time:
 
-The course is intended to deepen your knowledge of all aspects of OSGi. It is very hands-on and will cover the following areas:
+The Master Class is intended to deepen your knowledge of all aspects of OSGi. It is very hands-on and will cover the following areas:
 
 * How to think in Services
 * Distributed OSGi
