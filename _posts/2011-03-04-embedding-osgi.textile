@@ -71,7 +71,7 @@ h2. Exposing Application Packages
 
 When embedding OSGi we might want the bundles inside the OSGi framework to have visibility of types from the parent application. The way to do this is to expose those types as exports of the system bundle; then the bundles that wish to see those types can import them with @Import-Package@ in the usual way.
 
-For example suppose our parent application contains a domain model containing Customers and Orders, both of which in the package @org.example.mydomain@. This package needs to be added to the system bundle exports, so go back to the first code sample and insert the following where we had the TODO marker:
+For example suppose our parent application contains a domain model in the package @org.example.mydomain@. This package needs to be added to the system bundle exports, so go back to the first code sample and insert the following where we had the TODO marker:
 
 {% highlight java %}
 config.put(Constants.FRAMEWORK_SYSTEMPACKAGES_EXTRA,
