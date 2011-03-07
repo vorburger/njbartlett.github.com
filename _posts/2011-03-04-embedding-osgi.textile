@@ -31,7 +31,7 @@ h2. Add Bundles
 
 The @Framework@ object that was returned from @newFramework@ is actually a sub-interface of @Bundle@, from which we can get a @BundleContext@. If you have ever written a bundle activator then you are familiar with @BundleContext@ already: it's the central point of access to the entire OSGi API.
 
-Let's install the Felix Shell bundles (NB these bundles work just find on Equinox and Knopflerfish also):
+Let's install the Felix Shell bundles (NB these bundles work just fine on Equinox and Knopflerfish also):
 
 {% highlight java %}
 BundleContext context = framework.getBundleContext();
