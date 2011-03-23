@@ -14,7 +14,13 @@
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2011-02-28T13:09:11Z</date>
+			<date>2011-03-07T21:50:52Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>allposts.html</string>
+			<key>lastUsed</key>
+			<date>2011-03-22T14:04:50Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -54,9 +60,17 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2011-03-18-bndtools-support-for-maven.textile</string>
+			<key>lastUsed</key>
+			<date>2011-03-22T22:06:24Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2011-03-04-embedding-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2011-03-07T12:12:44Z</date>
+			<date>2011-03-07T21:50:48Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -111,8 +125,6 @@
 			<string>_posts/2010-08-10-generic-osgi.textile</string>
 			<key>lastUsed</key>
 			<date>2011-03-07T12:12:47Z</date>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -154,7 +166,7 @@
 			<key>filename</key>
 			<string>_layouts/default.html</string>
 			<key>lastUsed</key>
-			<date>2011-02-28T13:11:48Z</date>
+			<date>2011-03-22T14:04:51Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -182,6 +194,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{539, 98}, {833, 780}}</string>
+	<string>{{573, 98}, {833, 780}}</string>
 </dict>
 </plist>
