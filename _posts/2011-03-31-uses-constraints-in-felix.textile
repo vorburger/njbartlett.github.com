@@ -1,0 +1,61 @@
+---
+layout: post
+title: Apache Felix Diagnostics for "Uses" Conflicts
+summary: Untangling the plate of spaghetti... with help!
+tags: java osgi eclipse felix
+date: '03/31/2011 09:00'
+---
+
+Last month I wrote a <a href="/2011/02/09/uses-constraints.html">blog post explaining</a> how "uses constraint" violations come about in OSGi, and gave some heuristic shortcuts for solving them.
+
+Sometimes though, the shortcuts just don't work. In the worst case, you have to trace through all of the package dependencies manually in order to find the culprit. Usually the culprit is a duplicated package somewhere in the system, but finding it can be a headache.
+
+*Or, so I thought...*
+
+Yesterday I ran into just such a problem with a client's application. Equinox was printing the following error (package names have been changed to protect the innocent):
+
+{% highlight text %}
+!MESSAGE Bundle org.example.foo.xydata [17] was not resolved.
+!MESSAGE Package uses conflict: Import-Package:
+org.example.foo.util.service
+{% endhighlight %}
+
+None of the shortcuts I talked about in my last post worked, so I began the laborious process of tracing all the package dependencies. I did this for about 30 minutes before remembering that the latest versions of <a href="http://felix.apache.org/site/index.html">Apache Felix</a> have some great new diagnostics for uses constraint violations. After a little work to switch the framework used by the launcher, I managed to get Felix running and was immediately rewarded with the following message:
+
+{% highlight text %}
+Unable to resolve module org.example.foo.xydata [17] because it
+is exposed to package 'org.example.foo.util.verify' from
+'org.example.foo.framework' and 'org.example.foo.platform.util'
+via two dependency chains.
+
+Chain 1:
+  org.example.foo.xydata [17]
+    import: (package=org.example.foo.util.verify)
+     |
+    export: package=org.example.foo.util.verify
+  org.example.foo.framework [12]
+
+Chain 2:
+  org.example.foo.xydata [17]
+    import: (package=org.example.foo.bar.datastore)
+     |
+    export: package=org.example.foo.bar.datastore;
+                    uses:=org.example.foo.util.verify
+  org.example.foo.bar.datastore [13]
+    import: (package=org.example.foo.util.verify)
+     |
+    export: package=org.example.foo.util.verify
+  org.example.foo.platform.util [8]
+{% endhighlight %}
+
+This gets pretty close -- as close as one could get in pure text, I believe -- to a graphical representation, which I have attempted to reproduce as follows (omitting the common prefix):
+
+!/images/posts/usesconstraint/9.png!
+
+Bundle 17 cannot resolve because of the two dashed lines. These two wires cannot both exist at the same time, because that would lead to an inconsistent view of the @util.verify@ package.
+
+There is some information missing from Felix's message and my diagram... why has OSGi chosen to try to wire bundle 17's import of @util.verify@ to bundle 12? Just looking at the diagram, it seems like all would be well if it were wired to bundle 8. But of course the diagram is only a piece of the puzzle, and there are other constraints present that prevent the desired wiring (specifically, another import exists that must be resolved from bundle 12 and also uses @util.verify@). Nevertheless, there is enough information here to immediately diagnose the real problem: @util.verify@ has been incorrectly duplicated in multiple bundles. Removing the duplication fixed the problem.
+
+Granted, the analysis still requires somebody with some high level understanding of OSGi to work out what the underlying problem is. But at least Felix gives a substantial amount of information to work with, rather than leaving us in the dark.
+
+My client was so impressed that they are considering switching their development to Felix. But even if you remain a committed Equinox user, consider the possibility of using Felix temporarily to obtain diagnostics when you run into such problems. Another reason to use a <a href="/2011/03/07/embedding-osgi.html">standard, framework-agnostic launcher</a> architecture.
