@@ -169,7 +169,8 @@ mvn install:install-file \
     -DartifactId=bndtools-component-archetype \
     -Dversion=0.0.2-SNAPSHOT \
     -Dpackaging=jar \
-    -Dfile=./bndtools-component-archetype-0.0.2-SNAPSHOT.jar
+    -Dfile=./bndtools-component-archetype-0.0.2-SNAPSHOT.jar \
+    -DgeneratePom=true
 {% endhighlight %}
 
 You can now create a new project from the archetype as follows:
