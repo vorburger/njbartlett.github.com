@@ -14,11 +14,11 @@ This is an interesting analogy, but I obviously take issue with the implied crit
 
 The first thing to say is that I actually find IKEA furniture quite easy to build, and I doubt I am alone in this. Especially once you have built a few, you find there are common patterns... similar tools, similar kinds of connectors and so on. The instructions are so simple that they don't even need any text, and in many cases you can still complete the build even if you've lost the intructions.
 
-The main sources of frustration are errors: missing parts, or poorly machined connectors that don't fit they way they should. Fortunately these problems are rare (when a part IS missing, it's nearly always because I have lost it myself).
+The main sources of frustration are errors: missing parts, or poorly machined connectors that don't fit they way they should. Fortunately these problems are rare -- when a part IS missing, it's nearly always because I have lost it myself.
 
 Is there an alternative to this kind of modular construction? Of course. The previous generation of manufactured furniture consisted of completely whole, inflexible objects, produced in huge quantities. A desk, for example, was available in specific dimensions and with a specific number of drawers. If that desk didn't fit the corner where you wanted to put it, then you had two choices: hope somebody else __did__ sell a desk of the right size... or move house.
 
-Before manufacturing, furniture was assembled by craftsmen. It was gorgeous, high quality, fit precisely to your requirements... and cost literally thousands of times more than an equivalent IKEA product.
+Before mass production, furniture was assembled by craftsmen. It was gorgeous, high quality, fit precisely to your requirements... and cost literally thousands of times more than an equivalent IKEA product.
 
 Today most software is produced according to one of these two models. They are packaged COTS software and bespoke in-house applications, respectively. There is nothing wrong with either approach: if your requirements are conventional then a COTS solution is best; if your requirements are unique (and you have deep pockets) then building bespoke is the way to go. But there is a huge gulf between these models, and if your requirements fall somewhere between the two then you face either making do with software that isn't quite want you need, or spending a fortune building your own thing from scratch.
 
