@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>_posts/2011-03-23-towards-maven-support-in-bndtools.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -62,29 +60,35 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2011-05-11-osgi-ikea.textile</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T10:32:35Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2011-03-23-towards-maven-support-in-bndtools.textile</string>
 			<key>lastUsed</key>
-			<date>2011-04-07T09:27:20Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-05-11T13:54:11Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-03-31-uses-constraints-in-felix.textile</string>
 			<key>lastUsed</key>
-			<date>2011-04-07T09:27:20Z</date>
+			<date>2011-05-11T13:53:57Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-03-04-embedding-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2011-03-30T15:20:58Z</date>
+			<date>2011-05-11T13:54:09Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-02-09-uses-constraints.textile</string>
 			<key>lastUsed</key>
-			<date>2011-03-30T15:59:09Z</date>
+			<date>2011-05-13T10:18:42Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -198,87 +202,7 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>319</integer>
 	<key>metaData</key>
-	<dict>
-		<key>_posts/2011-02-09-uses-constraints.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>51</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>154</integer>
-			<key>firstVisibleLine</key>
-			<integer>30</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>36</integer>
-				<key>line</key>
-				<integer>51</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>51</integer>
-			</dict>
-		</dict>
-		<key>_posts/2011-03-04-embedding-osgi.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>8</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_posts/2011-03-23-towards-maven-support-in-bndtools.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>396</integer>
-				<key>line</key>
-				<integer>161</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>156</integer>
-		</dict>
-		<key>_posts/2011-03-31-uses-constraints-in-felix.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>55</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>34</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>_posts/2011-02-09-uses-constraints.textile</string>
-		<string>_posts/2011-03-04-embedding-osgi.textile</string>
-		<string>_posts/2011-03-31-uses-constraints-in-felix.textile</string>
-		<string>_posts/2011-03-23-towards-maven-support-in-bndtools.textile</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>

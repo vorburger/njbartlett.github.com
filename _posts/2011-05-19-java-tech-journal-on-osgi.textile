@@ -1,0 +1,25 @@
+---
+layout: post
+title: Bndtools in the Java Tech Journal
+summary: Hot off the presses...
+tags: java osgi eclipse
+date: '05/19/2011 03:00'
+---
+
+!>/images/posts/JTJ-2011-04.jpg!:http://jaxenter.com/java-tech-journal/JTJ-2011-04 
+
+The <a href="http://jaxenter.com/java-tech-journal/JTJ-2011-04">Java Tech Journal issue 8</a> is now available for free download, and is dedicated to OSGi.
+
+The JTJ is an impressive new publication from the folks at <a href="http://jaxenter.com/">JAXenter</a>, with each issue covering a different technology in depth. The current issue contains excellent articles by some of the leading names in OSGi:
+
+* _A Gentle Introduction to OSGi_, by Jerome Moliere from Mentor/J;
+* _What's New in Core 4.3?_ by BJ Hargrave and Peter Kriens from the OSGi Alliance;
+* _Developing OSGi with Bndtools_, by Marcel Offermans and Alexander Broekhuis from Luminis;
+* _OSGi A La Carte_, by Valentin Mahrwald and Holly Cummins from IBM Hursley labs;
+* _OSGi and JPA_, by Dmytro Pishchukhin;
+* _The Cure for Complexity_, by Richard Nicholson from Paremus (and President of the OSGi Alliance);
+* _The Enterprise OSGi Specification_, by Tim Diekmann from TIBCO and David Bosschaert from JBoss/Red Hat.
+
+From a personal point of view I'm very pleased to see multiple references to <a href="http://bndtools.org/">Bndtools</a> as a tool for developing OSGi bundles, not just in Marcel and Alexander's article but also in Jerome's tutorial and in Holly and Valentin's piece about the tooling ecosystem. Thanks to all the authors for your kind words — your cheques are in the post ;-)
+
+Stay tuned for some exciting announcements about Bndtools, coming up very soon...
