@@ -32,6 +32,7 @@ One reason why split packages are bad is because they break Java accessibility r
 Jigsaw's solution is to provide a mechanism -- the details of which are not yet specified -- for certain modules to share a class loader. Remarkably, this is really the only major requirements in the Jigsaw document not already supported by OSGi. It would fix the accessibility problem, and also certain other problems where a class expects to be able to load other classes dynamically through its own class loader.
 
 However, as necessary as it may be, Jigsaw's shared-class-loader solution creates more problems than it solves. OSGi's class loaders serve to create a barrier between modules, allowing private implementation to be hidden. Jigsaw tears down those boundaries, allowing non-modular code to be repackaged into module-like deployment units. This allows it to be applied to the toughest of legacy code, but at the same time it does nothing to discourage the ill-disciplined development practices that got us into this mess.
+
 It's like trying to lose weight through liposuction, rather than through diet and exercise.
 
 Also the access rule problem is far from the only issue arising from split packages. See the OSGi core specification, section 3.12.3, for some more good reasons not to do it. Admittedly none are as bad as making your molecules explode at the speed of light, but they're pretty bad.
