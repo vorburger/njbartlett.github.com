@@ -1,0 +1,72 @@
+---
+layout: post
+title: Why OBR?
+summary: Defending the defensible.
+tags: java osgi eclipse p2 obr
+date: 2011-09-12 11:45:00 +00:00
+---
+
+Pascal Rapicault has written a <a href="http://lenettoyeur-on-eclipse.blogspot.com/2011/09/why-not-obr.html">blog post</a> on his reasons for not choosing OBR as the provisioning technology for Eclipse.
+
+I have absolutely no wish to start a fight, certainly not between myself and Pascal whom I regard as a friend. However it would be remiss not to correct the errors in his post, because that could leave the impression that OBR is an unworkable technology. The fact is that, today, both OBR and p2 are workable technologies for provisioning OSGi applications, but I would argue that OBR is cleaner and more usable, and *much* easier to integrate. That's why I am incorporating OBR support into <a href="http://bndtools.org/">Bndtools</a> at pretty much every level.
+
+The OSGi Bundle Repository draft specification defines a repository index format and a resolver API. It allows us to do the following:
+
+# Add a repository index (or multiple indexes) to a resolver.
+# Specify the starting environment, for example which platform, which Java version, etc.
+# Add a set of requirements: what we want to get out of the resolver.
+# The resolver calculates the set of required resources that will satisfy those requirements. It also reports optional resources that may enhance the functionality of the selected set.
+
+To address Pascal's arguments in turn:
+
+bq. OBR focus was bundle centric. No "group" (aka features), no native files, …
+
+Incorrect. An OBR repository can reference any kind of resource. The dependencies between resources are modelled as abstract "requirements" and "capabilities". So a group/feature can be modelled as a resource that requires a bunch of other resources using their "name" capability.
+
+Naturally, most extant OBR repositories overwhelmingly contain OSGi bundles, but the same is true of p2.
+
+bq. The repository format was fixed and was XML only, no possibility of extension.
+
+Yes the repository format is XML, but it is quite extensible thanks to the generic requirement/capabilities model.
+
+OBR's format has the advantage of being a single file, @repository.xml@, compared to p2's twin files @content.xml@ and @artifacts.xml@, and it is more readable than either of them.
+
+bq. Each bundle listed in the repository was referring to the payload (the actual jar for the bundle) using a fix URL rather than abstracting the artifact location in a coordinate -- like Maven does with its concept of GAV or like p2 does with "artifact keys" -- which makes mirroring just plain painful (I know it is possible to provide URL handlers, but come on…).
+
+Incorrect. OBR repository indexes use URIs, not URLs. It is up to the downloader to resolve those to a physical location, just as p2's downloader must resolve its abstract "coordinates". Mirroring is therefore perfectly possible. Indeed there is no functional difference between a URI and a Maven "coordinate", and Maven coordinates can be trivially encoded as URIs.
+
+bq. The provided API was not allowing for transactional state change (some bundles could be installed, but not all the required ones if the download failed).
+
+OBR does not specify *how* to download resources, it only calculates *which* resources are required to satisfy the question we asked of it. Transactional behaviour can be built into the code that we use to download those resources. So while this was missing from OBR when Pascal evaluated it, he could have chosen to implement a transactional downloader on top of OBR rather than redesigning the whole repository and resolver.
+
+Since it is a standards document, OBR avoids mandating implementation details such as how to download resources, because whatever is convenient for Eclipse may be inconvenient or impossible in other environments.
+
+bq. The metadata did not accommodate the expression of what needed to happen to the bundle (e.g. should it be started, set the start level, etc.) and thus even less to other things.
+
+State requirements -- e.g. the requirement for the bundle to be in active state -- can again be represented in the requirements/capabilities model. However it is admittedly non-obvious how to do this, and the latest (non-released) draft of the specification will make this area clearer.
+
+bq. The resolver always insisted on installing all the fragments available (which in complex repos like Indigo means that installing JDT will bring in parts of WindowBuilder since it has some fragment to JDT UI iirc)
+
+The resolver tells us about available OSGi fragments as optional resources. The UI for a resolver (e.g. Eclipse Update Manager) should present those optional resources to the user and allow some or none of them to be selected.
+
+Platform-specific fragments (e.g. SWT) can use the requirements/capabilities model to ensure they are not selected on an incorrect platform. For example, the Win32 SWT fragment would have a requirement of type @platform@ and filter value @(&(os=win32)(ws=win32)(arch=x86))@. Before running the resolver we would add a "global" capability for the platform we actually want to resolve on.
+
+h2. Why not p2?
+
+Almost nobody believes that p2 was ready to be released when it actually was released, back in Eclipse 3.4 (Ganymede). As a result, installation of plug-ins in Ganymede, and even in the following release (3.5 Galileo) was so error-prone that most Eclipse users reverted to unzipping files directly into their @plugins@ directories.
+
+P2 finally became sort-of usable in 3.6 (Helios), but it still does not support one of the most important aspects of OSGi resolution: <a href="/2011/02/09/uses-constraints.html">uses constraints</a>. That is, the p2 metadata do not support expression of uses-constraints and the resolver algorithm does not take account of them. As a result it is quite easy to get p2 to resolve a set of bundles but later find that those bundles cannot work in the actual OSGi framework.
+
+Uses constraints are fully supported by OBR. It is still theoretically possible to generate a resolution set that does not resolve in OSGi, but this will always be possible unless we use the actual OSGi resolver itself, and under identical conditions. In practice, I have found OBR always produces high quality resolution sets so long as I feed it an accurate set of initial capabilities -- in other words, GIGO.
+
+The repository index generator for OBR is a simple command line tool provided in a single small JAR, which can also be used from ANT and Maven (it is already embedded in the Maven Bundle Plugin). In contrast, the p2 generator tool is an ANT task that only runs embedded inside Eclipse. This necessitates firing up a headless Eclipse application from an enclosing ANT build... and naturally you have to have a full Eclipse installation on your build machine.
+
+Finally, last time I checked, the p2 resolver only ran on Equinox, not on any other OSGi framework.
+
+On the other hand, there are certainly some valuable contributions in p2. The downloading, transactional updates, touchpoints etc would all still be useful in a provisioning system built on top of OBR's repository and resolver.
+
+h2. The Future
+
+Pascal is right to try to identify missing features in OBR, but I feel that he fell into the trap of mistaking one particular implementation -- the Felix OBR bundle as it existed back in 2007/8 -- with the abstract features of the specification itself. All of the requirements he states could have been implemented alongside an improved OBR bundle rather than throwing out the baby with the bathwater
+
+However, what's done is done. I'm glad that Pascal has participated in the effort to update the OBR specification, and I hear from my contacts inside the Alliance that the new specification is close to release. At that point I will incorporate the new OBR into Bndtools, and continue to recommend it to my clients who are seeking an OSGi provisioning story.
