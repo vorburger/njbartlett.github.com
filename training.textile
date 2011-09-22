@@ -3,10 +3,6 @@ layout: default
 title: Training
 ---
 
-h2. Eclipse RCP -- Updated!
-
-I offer a 4-day Eclipse RCP course that is original 
-
 h2. OSGi Masterclass with Peter Kriens
 
 The "OSGi Master Class":http://www.aqute.biz/MasterClass/MasterClass with "Peter Kriens":http://www.osgi.org/blog will be coming again soon! Here is some information from last time:
@@ -39,4 +35,4 @@ I currently offer the following training courses:
 * Enterprise OSGi (1 day)
 * Eclipse RCP (4 days)
 
-These courses can be delivered on your premises -- please "contact me":mailto:njbartlett@gmail.com for schedule and pricing enquiries. They also run occasionally as public courses, in collaboration with "Skills Matter Ltd":http://skillsmatter.com/expert/java-jee/neil-bartlett.
+These courses can be delivered on your premises -- please "contact me":mailto:njbartlett@gmail.com for schedule and pricing enquiries.

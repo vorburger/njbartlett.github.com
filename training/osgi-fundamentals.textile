@@ -8,7 +8,7 @@ h2. Fundamentals of OSGi -- Training
 
 This 2-day workshop covers the fundamentals of developing for OSGi, the Dynamic Module System for Java, and using OSGi's fine-grained services to produce highly decoupled and reusable software components.
 
-On day one, you will be introduced to OSGi and learn how it meets the challenge of building modular, scalable applications for the Java Platform. Next you will review the three principal open source implementations of OSGi before focussing on one of them (Eclipse Equinox). Then you will dive into the construction of modules, learning how to define dependencies between modules and manage versions of APIs.
+On day one, you will be introduced to OSGi and learn how it meets the challenge of building modular, scalable applications for the Java Platform. Next you will review the three principal open source implementations of OSGi before focussing on one of them (Apache Felix). Then you will dive into the construction of modules, learning how to define dependencies between modules and manage versions of APIs.
 
 Next you'll move onto OSGi Services, the lynchpin of OSGi's programming model. You will use the Declarative Services (DS) specification to build components that are able to react to their environment, configure themselves dynamically and call other components. Then you will look at one of the most important patterns used in constructing real applications with services, namely the "whiteboard" pattern.
 

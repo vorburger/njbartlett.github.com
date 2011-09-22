@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>_posts/2011-05-26-jdk8-modularity-requirements.textile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -62,47 +60,51 @@
 		</dict>
 		<dict>
 			<key>filename</key>
+			<string>_posts/2011-06-16-osgi-nirvana.textile</string>
+			<key>lastUsed</key>
+			<date>2011-06-16T15:39:55Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>_posts/2011-05-27-jdk8-modularity-requirements.textile</string>
+			<key>lastUsed</key>
+			<date>2011-06-16T04:15:18Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
 			<string>_posts/2011-05-25-concurrent-vaadin.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-25T23:18:44Z</date>
+			<date>2011-06-11T21:28:48Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-05-20-osgi-masterclass-stockholm.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-25T12:44:42Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>_posts/2011-05-26-jdk8-modularity-requirements.textile</string>
-			<key>lastUsed</key>
-			<date>2011-05-25T23:18:44Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-06-16T04:17:00Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-05-19-java-tech-journal-on-osgi.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-25T23:18:41Z</date>
+			<date>2011-06-11T21:28:48Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-05-11-osgi-ikea.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-18T17:32:41Z</date>
+			<date>2011-06-16T04:17:07Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-03-23-towards-maven-support-in-bndtools.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-11T13:54:11Z</date>
+			<date>2011-06-16T04:17:11Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>_posts/2011-03-31-uses-constraints-in-felix.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-11T13:53:57Z</date>
+			<date>2011-06-16T04:17:17Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -114,7 +116,9 @@
 			<key>filename</key>
 			<string>_posts/2011-02-09-uses-constraints.textile</string>
 			<key>lastUsed</key>
-			<date>2011-05-13T10:18:42Z</date>
+			<date>2011-06-16T15:39:56Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -238,91 +242,10 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>319</integer>
 	<key>metaData</key>
-	<dict>
-		<key>_posts/2011-05-19-java-tech-journal-on-osgi.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>8</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>8</integer>
-			</dict>
-		</dict>
-		<key>_posts/2011-05-25-concurrent-vaadin.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-		</dict>
-		<key>_posts/2011-05-26-jdk8-modularity-requirements.textile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>_posts/2011-05-19-java-tech-journal-on-osgi.textile</string>
-		<string>_posts/2011-05-25-concurrent-vaadin.textile</string>
-		<string>_posts/2011-05-26-jdk8-modularity-requirements.textile</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{632, 98}, {833, 780}}</string>
+	<string>{{725, 154}, {833, 780}}</string>
 </dict>
 </plist>
