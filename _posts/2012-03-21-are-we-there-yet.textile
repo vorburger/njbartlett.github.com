@@ -58,6 +58,7 @@ public void failed(Coordination coordination) throws Exception {
 		file.delete();
 		// omitted some extra error handling and logging here
 	}
+	newFilesInCoordination.clear();
 }
 {% endhighlight %}
 
