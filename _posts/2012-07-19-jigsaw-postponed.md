@@ -1,0 +1,26 @@
+---
+layout: post
+title: Jigsaw Postponed
+summary: How does this affect OSGi?
+tags: java osgi jigsaw
+date: 2012-07-19 12:00:00
+---
+
+The dust is now settling on the announcement that Jigsaw -- the prototype project that was widely expected to become the Java SE 8 Module System -- will be deferred to Java 9. This is just the latest delay to a promised feature that started way back in 2005 with JSR 277, was supposed to be delivered in Java 7, then in Java 8, now in Java 9... it's not unreasonable to ask whether Java Modularity will *ever* happen.
+
+Believe it or not, I am disappointed. It's true that some in the OSGi community consider the news to be unequivocally a good thing: the removal of a competitor can certainly take the pressure off. However we need pressure to raise our game and continue improvng the usability and productivity aspects of working with OSGi. Frankly if Jigsaw could truly do a better job than OSGi then it would deserve to take over.
+
+The big problem with Jigsaw is not that it competes with OSGi: as currently defined, it does not. The problem is scope creep.
+
+First an unavoidable fact: whatever module system is used to modularise the JRE itself must be able to run *inside* the JRE, i.e. it has to be part of the core. OSGi is a general-purpose module system that is conceptually very simple (export a package, import a package) but due to the nature of real systems it has to handle an awful of lot edge cases. These edge-cases and the OSGi support for them have been built up over around 14 years of putting OSGi into real production systems, but they contribute to the size of a typical OSGi framework (480k for Apache Felix 4.0.3) and to the length of the specification document. In an enterprise application, and even in many modern mobile applications, 480k is nothing to worry about, but it's still too big for the inner sanctum of the JRE.
+
+Add to this that the JRE has some very unusual problems that don't affect normal libraries and application, and OSGi's general-purpose module support doesn't look so useful for JRE modularity. In fact the JRE is almost nothing but a bunch of edge-cases. So there's a good case for putting a special-purpose module system into the JRE that supports only the JRE requirements... and that's what Jigsaw was meant to be. Incidentally if you took OSGi and stripped out all the general purpose features, leaving in only features needed for the JRE... you'd get something surprisingly close to Jigsaw!
+
+Unfortunately as they say, when all you have is a hammer everything looks like a nail. After building themselves a shiny new hammer for the JRE, the Jigsaw developers started to see nothing but nails in the Java application and library space. Once you step into that space though you need the general purpose solution with all the edge-cases. I wasn't really concerned that Jigsaw was heading to take over this space because it was so clearly deficient, though I was concerned about developers who would waste huge amounts of time and money trying to get it to work. (Incidentally I have been accused of opposing Jigsaw for selfish reasons, since I make most of my living from OSGi. On the contrary: in fact I'm confident that Jigsaw would double my consulting rates, since so many people will need rescuing from tangled messes. That's just not how I *want* to make a living.)
+
+So because of this scope creep it looks like we will not get the benefits of a modular JRE until at least 2015. This is a great shame for developers using OSGi just as it is for everyone else developing on the Java platform. For starters, who wouldn't like to have the ability to strip down the JRE to just the core functionality that we need?? Also the way OSGi interacts with the JRE today leaves a lot to be desired.  Ideally an OSGi bundle wants to depend entirely on versioned packages, but due to a JVM security restriction we have to treat the entire `java.*` namespace differently. The best we can do is use the `Bundle-RequiredExecutionEnvironment` header to assert the version of Java our bundle requires, i.e. Java 5 or Java 6 etc. This kind of works but is a very blunt tool. Another problem is that the other packages from the JRE -- `javax.swing`, `org.w3c.dom` etc -- are all completely unversioned. Then you have garbage like the inclusion of package `javax.transaction` since Java 1.3, but only a small subset of the classes that belong in that package... this sounds like a trivial thing but it breaks an amazing number of libraries.
+
+A modular JRE could have fixed these problems, allowing OSGi bundles to require a JRE containing a specified set of versioned modules. We could then perform compile-time validation that only the required APIs were actually used within the bundle, and we could even use the OSGi R5 Resolver to work out which set of JRE modules to install when provisioning that bundle. I do still hope we can get to this point in the future.
+
+In conclusion I have a message to the OSGi community: **this is not the time to sit on our laurels**. Yes, we are the only realistic solution today for Java modularity, and we have just been given some extra time to consolidate our lead. However OSGi is still not as easily usable or as productive as it should be -- if we don't address these issues *now*, then we deserve to be forgotten after Java 9.
+
