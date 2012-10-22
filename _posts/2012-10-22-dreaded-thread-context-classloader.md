@@ -6,7 +6,7 @@ tags: java osgi eclipsecon
 date: 2012-10-23 12:00:00
 ---
 
-Tomorrow at <a href="http://www.eclipsecon.org/europe2012/">EclipseCon Europe 2012</a> I will be talking about <a href="http://www.eclipsecon.org/europe2012/sessions/how-make-your-code-osgi-friendly-without-depending-osgi">"How to make your library OSGi friendly without depending on OSGi"</a>. During this talk I will make reference to Java's Thread Context Class Loader (TCCL), but since it is only a 25-minute talk I will not have time to go into great detail on this subject. Therefore I thought it would be helpful to write this post with some of the background information.
+Tomorrow at <a href="http://www.osgi.org/CommunityEvent2012/HomePage">OSGi Community Event 2012</a> I will be talking about <a href="http://www.eclipsecon.org/europe2012/sessions/how-make-your-code-osgi-friendly-without-depending-osgi">"How to make your library OSGi friendly without depending on OSGi"</a>. During this talk I will make reference to Java's Thread Context Class Loader (TCCL), but since it is only a 25-minute talk I will not have time to go into great detail on this subject. Therefore I thought it would be helpful to write this post with some of the background information.
 
 Much of the technical information and research in this post is derived from an old, unpublished OSGi RFP authored by Peter Kriens. I have used it with his permission.
 
