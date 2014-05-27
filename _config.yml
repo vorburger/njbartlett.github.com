@@ -1,2 +1,1 @@
-pygments: true
-exclude: [blog.tmproj, TiddlySaver.jar]
+highlighter: true
