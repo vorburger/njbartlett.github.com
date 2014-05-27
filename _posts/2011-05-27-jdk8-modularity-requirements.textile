@@ -3,7 +3,7 @@ layout: post
 title: The JDK8 Module System Requirements
 summary: My take on things
 tags: java osgi eclipse
-date: '05/27/2011 06:30'
+date: 2011-05-27T06:30:00+00:00
 ---
 
 bq. "There's something very important I forgot to tell you. Don't cross the streams... It would be bad... Try to imagine all life as you know it stopping instantaneously and every molecule in your body exploding at the speed of light."

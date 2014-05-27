@@ -3,7 +3,7 @@ layout: post
 title: Solving OSGi "Uses" Constraint Violations
 summary: Untangling the plate of spaghetti. 
 tags: java osgi eclipse
-date: '02/09/2011 21:45'
+date: 2011-09-02T21:45:00+00:00
 ---
 
 One of the thornier deployment problems we sometimes come across in OSGi is the dreaded "uses constraint violation". I recently helped a client to solve one of these, and it occurred to me to document the problem and the approach to solving it.

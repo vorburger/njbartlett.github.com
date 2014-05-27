@@ -3,7 +3,7 @@ layout: post
 title: OSGi and IKEA
 summary: Modular software, modular furniture.
 tags: java osgi eclipse
-date: '05/11/2011 11:00'
+date: 2011-05-11T11:00:00+00:00
 ---
 
 Mario Fusco wrote a "thought-provoking tweet":https://twitter.com/#!/mariofusco/status/68209314178928640 this morning:

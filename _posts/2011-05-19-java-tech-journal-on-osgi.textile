@@ -3,7 +3,7 @@ layout: post
 title: Bndtools in the Java Tech Journal
 summary: Hot off the presses...
 tags: java osgi eclipse
-date: '05/19/2011 03:00'
+date: 2011-05-19T03:00:00+00:00
 ---
 
 !>/images/posts/JTJ-2011-04.jpg!:http://jaxenter.com/java-tech-journal/JTJ-2011-04 

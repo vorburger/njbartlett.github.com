@@ -3,7 +3,7 @@ layout: post
 title: How To Embed OSGi
 summary: A quick tutorial
 tags: java osgi eclipse
-date: '03/07/2011 09:00'
+date: 2011-07-03T09:00:00+00:00
 ---
 
 A popular question on mailing lists and "Stack Overflow":http://stackoverflow.com/questions/4673406/programatically-start-osgi-equinox is how to embed OSGi in a larger application. This is really easy to do, especially since a standard API for it was introduced in OSGi Release 4.1. Because of the standard, switching between Equinox, Felix and Knopflerfish can be as simple as a configuration change.

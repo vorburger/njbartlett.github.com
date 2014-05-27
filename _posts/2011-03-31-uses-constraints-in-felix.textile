@@ -3,7 +3,7 @@ layout: post
 title: Apache Felix Diagnostics for "Uses" Conflicts
 summary: Untangling the plate of spaghetti... with help!
 tags: java osgi eclipse felix
-date: '03/31/2011 09:00'
+date: 2011-03-31T09:00:00+00:00
 ---
 
 Last month I wrote a <a href="/2011/02/09/uses-constraints.html">blog post explaining</a> how "uses constraint" violations come about in OSGi, and gave some heuristic shortcuts for solving them.

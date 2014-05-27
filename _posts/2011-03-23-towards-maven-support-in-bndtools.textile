@@ -3,7 +3,7 @@ layout: post
 title: Towards Maven Support in Bndtools
 summary: Building Bndtools Projects with Maven
 tags: java osgi bndtools maven eclipse
-date: '03/23/2011 14:00'
+date: 2011-03-02T14:00:00+00:00
 ---
 
 A commonly requested enhancement for Bndtools is to enable integration with Maven. Although I don't tend to use Maven myself, I do recognise that it's a very popular build tool, especially in big companies with lots of developers.

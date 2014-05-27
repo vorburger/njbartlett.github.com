@@ -3,7 +3,7 @@ layout: post
 title: Concurrent Vaadin
 summary: Handling asynchronous events in a Vaadin application.
 tags: java osgi eclipse
-date: '05/25/2011 14:00'
+date: 2011-05-25T14:00:00+00:00
 ---
 
 As my colleagues and regular readers know, I have been hugely impressed by <a href="http://www.vaadin.com">Vaadin</a>, a web framework for Java, and have been using it in many of my OSGi demos, tutorials and projects.
