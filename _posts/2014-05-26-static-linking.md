@@ -43,11 +43,11 @@ Incidentally this practice doesn't violate the DRY (Don't Repeat Yourself) princ
 ### Contraindications
 
 
-A few words of warning. Like all power tools, `Conditional-Package` is dangerous if abused. When we pull a package into our bundle we inherit all of its dependencies, so it is best to do this with small, coherent packages that do not have a large tree of transitive dependencies. Try to design your packages so that they do only one thing each... don't make a big generic `util` package, instead make subpackages such as `util.xml`, `util.io`, `util.encoding` and so on. Note that `Conditional-Package` will pull in any transitive package dependencies that match the pattern we have specified -- all others are treated as external dependencies and end up in `Import-Package`.
+A few words of warning. Like all power tools, `Conditional-Package` is dangerous if misused. When we pull a package into our bundle we inherit all of its dependencies, so it is best to do this with small, coherent packages that do not have a large tree of transitive dependencies. Try to design your packages so that they do only one thing each... don't make a big generic `util` package, instead make subpackages such as `util.xml`, `util.io`, `util.encoding` and so on. Note that `Conditional-Package` will pull in any transitive package dependencies that match the pattern we have specified -- all others are treated as external dependencies and end up in `Import-Package`.
 
-Using a qualfied or prefixed wildcard such as `org.example.util.*` is okay. Using a bare wildcard is **not** okay. I have seen this done accidentally: as a result, the bundle contained large chunks of the JRE as well as OSGi core packages.
+Using a qualified or prefixed wildcard such as `org.example.util.*` is okay. Using a bare wildcard is **not** okay. I have seen this done accidentally: as a result, the bundle contained large chunks of the JRE as well as OSGi core packages.
 
-Another danger is if we pull in packages that are used by an imported interface. Take the following example:
+Another danger is if we pull in packages that are used by an exported interface. Take the following example:
 
 {% highlight java %}
 package b;
