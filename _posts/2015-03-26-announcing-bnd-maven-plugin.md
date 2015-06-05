@@ -112,4 +112,4 @@ To add the plugin to your project, insert the following into your POM:
         </executions>
     </plugin>
 
-We have [example projects](https://github.com/bndtools/bnd/tree/bnd-maven-plugin-2.5/bnd-maven-plugin-examples) to get started. Questions, problems or offers of help can be can be directed to the [bnd/Bndtools mailing list](https://groups.google.com/forum/#!forum/bndtools-users).
+We have [example projects](https://github.com/bndtools/bnd/tree/bnd-maven-plugin-2.4.1/bnd-maven-plugin-examples) to get started. Questions, problems or offers of help can be can be directed to the [bnd/Bndtools mailing list](https://groups.google.com/forum/#!forum/bndtools-users).
