@@ -72,21 +72,19 @@ Central.  From now on we will work on version 3.0, which will track version 3.0
 of bnd.
 
 The plugin generates the JAR manifest into
-`target/classes/META-INF/MANIFEST.MF`, but due to a limitation of the
-maven-jar-plugin this file is ignored and replaced by an empty, non-OSGi
-manifest. We are preparing a patch against maven-jar-plugin to modify this
-behaviour and hope that it will be accepted, but in the meantime it is
-necessary to set the following configuration one time in your parent POM:
+`target/classes/META-INF/MANIFEST.MF`, but by default the maven-jar-plugin
+ignores this file and replaces it with an empty, non-OSGi manifest. In order
+to pick up the generated manifest it is necessary to set the following
+configuration, which can be done just once in your parent POM:
 
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
-            <archive>
-                <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-            </archive>
+            <useDefaultManifestFile>true</useDefaultManifestFile>
         </configuration>
     </plugin>
+
 
 
 **The plugin is available now [from Maven
