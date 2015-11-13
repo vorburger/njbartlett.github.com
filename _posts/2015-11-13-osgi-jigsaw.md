@@ -6,7 +6,7 @@ tags: osgi jigsaw bnd
 date: 2015-11-13 12:00:00
 ---
 
-The best thing about the [Java Platform Module System](http://openjdk.java.net/projects/jigsaw/spec/sotms/) -- commonly known as Project Jigsaw, or [JSR 376](https://www.jcp.org/en/jsr/detail?id=376) -- is that it has been used to break apart the monolithic Java runtime into smaller modules. This makes Java a more attractive implementation technology in many scenarios where is has historically been weak. For example, modern desktop or mobile applications can't rely on having a pre-installed copy of Java on the user's device, so you need to ship Java as part of your application. IoT is also driving developers to seek smaller installed size and memory footprint.
+The best thing about the [Java Platform Module System](http://openjdk.java.net/projects/jigsaw/spec/sotms/) -- commonly known as Project Jigsaw, or [JSR 376](https://www.jcp.org/en/jsr/detail?id=376) -- is that it has been used to break apart the monolithic Java runtime into smaller modules. This makes Java a more attractive implementation technology in many scenarios where it has historically been weak. For example, modern desktop or mobile applications can't rely on having a pre-installed copy of Java on the user's device, so you need to ship Java as part of your application. IoT is also driving developers to seek smaller installed size and memory footprint.
 
 Unfortunately, Jigsaw has some shortcomings as a module system for applications. I don't want this blog post to be a critique of Jigsaw, but suffice to say there are many developers who will prefer to use OSGi for application modularity.
 
