@@ -8,7 +8,7 @@ img {
 
 body {
   line-height: 130%;
-  font-size: 100%;
+  font-size: 110%;
   color: #222;
   background: #fff;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -18,7 +18,7 @@ a:hover, a:active, #sidebar a:active, #sidebar a:hover, #content a {
   color: #b40 !important;
 }
 #site {
-  width: 850px;
+  width: 1050px;
   margin: auto;
 }
 
@@ -71,12 +71,12 @@ h1 a, h1 a:link, h1 a:visited {
 }
 
 #breadcrumbs {
-  width: 600px;
+  width: 800px;
   padding: 0 20px;
 }
 
 #content {
-  width: 600px;
+  width: 800px;
   padding: 0 20px 20px 20px;
 }
 #content ul {
@@ -241,17 +241,17 @@ td.p {
 	}
 	
 	#content {
-		width: 600px;
+		width: 800px;
 		padding: 0 60px;
 	}
 	
 	h1 {
-		width: 600px;
+		width: 800px;
 		padding: 20px 60px;
 	}
 	
 	#breadcrumbs {
-		width: 600px;
+		width: 800px;
 		padding: 0 60px;
 	}
 }
