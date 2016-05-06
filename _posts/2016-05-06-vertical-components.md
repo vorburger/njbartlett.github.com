@@ -130,7 +130,7 @@ Finally, the application bundle contains `index.html` which simply uses the `car
 
 ### Resolution
 
-In the code there are a couple of unfamiliar annotations. In the web component bundle, the `@WebComponent` annotation generates a `Provide-Capability` header in the OSGi bundle manifest that declares our bundle provides the `cart-list` web component. The `@RequireHttpImplementation` generates a requirement for an HTTP Service implementation.
+In the code there are a couple of new annotations, which I have adapted from <a href="http://enroute.osgi.org">OSGi en Route</a>. In the web component bundle, the `@WebComponent` annotation generates a `Provide-Capability` header in the OSGi bundle manifest that declares our bundle provides the `cart-list` web component. The `@RequireHttpImplementation` generates a requirement for an HTTP Service implementation.
 
 In the application bundle we use `@RequireWebComponent` to require the component that is provided by the web-component bundle. The application bundle also repeats the `@RequireHttpImplementation` annotation for completeness.
 
