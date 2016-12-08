@@ -66,6 +66,7 @@ For example, if you are writing a straightforward launcher then you probably wan
 
 {% highlight java %}
 try {
+    framework.stop();
     framework.waitForStop(0);
 } finally {
     System.exit(0);
